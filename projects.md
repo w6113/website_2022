@@ -15,10 +15,10 @@ title: W6113 Research Project
 
 Percentages are of your total class grade.
 
-* Proposal    10-01   (5%)
-* Paper Draft   10-29  (10%)
-* Presentation  12-10  (10%)
-* Report        12-15   (40%)
+* Proposal    3-2   (required)
+* Paper Draft   3-30  (required)
+* Presentation  4-27  (10%)
+* Final Paper   5-04   (30%)
 
 
 
@@ -100,8 +100,8 @@ Your presentation should cover (in content, not necessarily one slide for each p
 
 **Submission**
 
-* Submit URL to your group's [PDF file or google slides](https://forms.gle/Ck1FX3higgbVUHkA9)
-* Deadline for submission: Tuesday, 12/08/2020 11:59 PM
+* Add your slides to [this google slides link](#)
+* Deadline for submission: TBA
 
 
 ### Report/Camera Ready
@@ -109,10 +109,8 @@ Your presentation should cover (in content, not necessarily one slide for each p
 You will revise your draft and submit a conference-style report on your project, with **maximum length** of 12 pages. 
 Because this report is the primary deliverable upon which you will be graded, **do not treat it as an afterthought**. Plan to leave at least a week to do the writing, and make sure your proofread and edit carefully!
 
-**Submission**
 
-* Deadline: Tuesday, December 15 2020
-* [Submit here.  Name your file UNI_UNI.pdf](https://www.dropbox.com/request/HzQwTw6CpdST28wMvyFS) 
+[Submit here.  Name your file UNI_UNI.pdf](#) 
 
 
 <a name="types"></a>
@@ -382,6 +380,8 @@ Creating an evolved benchmark requires several steps:
 
 -->
 
+<!--
+
 Topics
 
 Data Market Systems
@@ -459,3 +459,4 @@ Automatic Time-series Prediction
 Develop techniques to make the process of time-series forecasting easier. This includes data integration, automatic tuning, and the front-end. Prophet (or a similar tool) might be a good starting point https://github.com/facebook/prophet 
 
 
+-->
