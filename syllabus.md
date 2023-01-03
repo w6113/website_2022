@@ -6,7 +6,7 @@ layout: page
 
 Data management systems are the corner-stone of modern applications, businesses, and science (including data). If you were excited by the topics in 4111, this graduate level course in database systems research will be a deep dive into classic and modern database systems research. Topics will range from classic database system design, modern optimizations in single-machine and multi-machine settings, data cleaning and quality, and application-oriented databases.
 
-The class places a heavy emphasis on paper reading and writing good paper reviews. The point is to practice reading papers critically, writing proper reviews, implementing ideas in research papers, and conducting research. As such, students will be expected to read papers in depth, complete assignments based ideas from the readings, and conduct a semester-long research project.
+The class places a heavy emphasis on paper reading and discussion. The point is to practice reading papers critically, discussing facets of the papers, implementing ideas in research papers, and conducting research. As such, students will be expected to read papers in depth, complete assignments based ideas from the readings, and conduct a semester-long research project.
 
 Ideally, you will be comfortable with reading code that is not yours, open to trying different software systems, and willing to actively participate in and lead discussions.
 
@@ -34,18 +34,21 @@ Since the course is small, it is expected that students will help contribute to 
 
 
 
+<!--
 <a name="reading"></a>
 #### Paper Reviews (every class)
 
 See [./papers](./papers) for a description and expectations for paper reviews.
+-->
 
 
 
+<!--
 #### Assignments
 
 
 For assignments, you allowed 5 penalty free late days to use throughout the semester. One late day equals one 24 hour period after the due date of the assignment. Once you have used your late days, the assignment will be 0.    There is no need to tell the staff that you are using the late day.
-
+-->
 
 
 #### Project (semester long)
@@ -66,6 +69,7 @@ A corallory is that your conduct is respectful and encouraging to your fellow st
 -->
 
 
+<!--
 <a name="ec"></a>
 #### Extra Credit
 
@@ -76,7 +80,7 @@ Propose an extra credit activity and convince me how much extra credit (up to 10
 * learn a topic/system/etc not covered and teach us
 * implement a paper/idea 
 * _your crazy idea here_
-
+-->
 
 
 <a name="faq"></a>
