@@ -2,6 +2,7 @@
 layout: page
 ---
 
+<!--
 # Paper Reviews
 
 You are expected to write and submit a paper review of the readings before each class, and answer some questions about the readings.  The review should be akin to a conference paper review.  The purpose of the readings is to provide an illustrative example of the research area.  You are encouraged but not required to read the supplemental readings to better understand the materials.  
@@ -23,6 +24,7 @@ Overview
   * Read the instructions at the top
   * Click "Edit" in the upper right. 
   * Add your review
+-->
 
 ### Reading Tips
 
@@ -88,15 +90,7 @@ Readings
 
 * Required: [Shapiro: Join Processing in Database Systems with Large Main Memories](./files/papers/gracejoin-shapiro.pdf)
 * Optional: [Ripple Joins for Online Aggregation](http://www.cs.cmu.edu/~natassa/courses/15-823/F02/papers/decision-ripple-sigmod99.pdf)
-
-
-
-<a name='distjoin' />
-### Distributed Joins    
-
-Readings
-
-* Required: [The Gamma database machine project](https://wiki.epfl.ch/edicpublic/documents/Candidacy%20exam/gamma.pdf)
+* Optional: [The Gamma database machine project](https://wiki.epfl.ch/edicpublic/documents/Candidacy%20exam/gamma.pdf)
 * Optional: [TrackJoin](./files/papers/trackjoin-sigmod14.pdf)
 * Optional: [Parallel Database systems: the future of high performance database systems](./files/papers/paralleldbsystems-dewitt.pdf)
 * Optional: [Pushing Data-Induced Predicates Through Joins in Big-Data Clusters](http://www.vldb.org/pvldb/vol13/p252-orr.pdf)
@@ -111,8 +105,8 @@ Readings
 * Optional: [SEDA: An Architecture for Well-Conditioned, Scalable Internet Services](http://www.sosp.org/2001/papers/welsh.pdf)
 
 
-<a name='cascades' />
-### Top-down Optimization    
+<a name='qopt' />
+### Query Optimization Optimization    
 
 Readings
 
@@ -138,6 +132,12 @@ Readings
 * Optional: [Blog Post: 40x faster hash joiner with vectorized execution](https://www.cockroachlabs.com/blog/vectorized-hash-joiner/)
 
 
+<a name="memstore"/>
+### Main-memory Systems
+
+* [MonetDB/X100: Hyper-Pipelining Query Execution](./files/papers/monetdb-cidr05.pdf)
+* [Morsel-Driven Query Execution](#)
+* [Leanstore](#)
 
 <a name="clouddb" />
 ### Cloud-scale Analytics
@@ -228,6 +228,15 @@ Some notes to guide your reading and thinking.
 * Required: [Aurora](http://cs.brown.edu/research/aurora/vldb03_journal.pdf)
 * Required: [Flink](http://www.vldb.org/pvldb/vol10/p1718-carbone.pdf)
 
+<a name="apps"/>
+### Applications as Views
+
+* [Convex](https://www.youtube.com/watch?v=iizcidmSwJ4CMU)
+* [Do-It-Yourself Database-Driven Web Applications](https://www.skylineuniversity.ac.ae/pdf/database/Database%20driven%20web%20sites.pdf)
+* [DVMS]()
+* [QUILT](https://dl.acm.org/doi/pdf/10.1145/2642918.2647387)
+* [Building data-centric apps with a reactive relational database](https://riffle.systems/essays/prelude/)
+
 <a name="incmatviews" />
 ### Incrementally Maintaining Materialized Views
 
@@ -275,7 +284,15 @@ Read one of the two required papers:
 * Optional: [Provenance for Interactive Visualizations](https://www.dropbox.com/s/32aid7isd2arx47/smoke-hilda18-cr.pdf?dl=0)
 * Optional: [Titian: Data Provenance Support in Spark](http://www.vldb.org/pvldb/vol9/p216-interlandi.pdf)
 
-<a name="occ"/>
+<a name="costest"/>
+### Cost Estimation
+
+* How good are cost estimators really?
+* Neo
+* Leo
+* Join Size Estimation
+
+<a name="cc"/>
 ### Optimistic and Multiversion Concurrency Control
 
 * Required: [Seeing is Believing](https://drive.google.com/file/d/1we7ok4C8ra2-6fP1yT7EJ-Rv9LSGCiUt/view)
@@ -294,6 +311,16 @@ Read one of the two required papers:
 * (Optional) [Raft Refloated](http://www.cl.cam.ac.uk/~ms705/pub/papers/2015-osr-raft.pdf) 
 * (Optional) [Google's Paxos Made LIve](https://research.google.com/archive/paxos_made_live.html)
 * (Optional) [Anna: A Crazy Fast, Super-Scalable, Flexibly Consistent KVS](https://rise.cs.berkeley.edu/blog/anna-kvs/)
+
+
+<a name="mlindb" />
+### ML in DB
+
+* Required: [MAD Skills: New Analysis Practices for Big Data](http://db.cs.berkeley.edu/papers/vldb09-madskills.pdf)
+* Encouraged: [Dan Olteanu's VLDB 2020 Keynote](https://www.youtube.com/watch?v=0ic0jMjOpM0) and skim [the paper](http://www.vldb.org/pvldb/vol13/p3502-olteanu.pdf)
+* Optional: [Towards a Unified Architecture for in-RDBMS Analytics](https://cs.stanford.edu/people/chrismre/papers/bismarck.pdf)
+* Optional: [Learning Generalized Linear Models Over Normalized Data](http://pages.cs.wisc.edu/~jignesh/publ/GLMs-over-joins.pdf)
+* Optional: [Technical Debt](https://ckaestne.medium.com/technical-debt-in-machine-learning-systems-62035b82b6de)
 
 
 
@@ -378,16 +405,6 @@ Readings
 * Optional: [Serverless Computing: One Step Forward, Two Steps Back](http://cidrdb.org/cidr2019/papers/p119-hellerstein-cidr19.pdf)
 * Optional: [Autoscaling Tiered Cloud Storage in Anna](https://dsf.berkeley.edu/jmh/papers/anna_vldb_19.pdf)
   * The discributed KV-store used in Cloudburst
-
-
-<a name="mlindb" />
-### ML in DB
-
-* Required: [MAD Skills: New Analysis Practices for Big Data](http://db.cs.berkeley.edu/papers/vldb09-madskills.pdf)
-* Encouraged: [Dan Olteanu's VLDB 2020 Keynote](https://www.youtube.com/watch?v=0ic0jMjOpM0) and skim [the paper](http://www.vldb.org/pvldb/vol13/p3502-olteanu.pdf)
-* Optional: [Towards a Unified Architecture for in-RDBMS Analytics](https://cs.stanford.edu/people/chrismre/papers/bismarck.pdf)
-* Optional: [Learning Generalized Linear Models Over Normalized Data](http://pages.cs.wisc.edu/~jignesh/publ/GLMs-over-joins.pdf)
-* Optional: [Technical Debt](https://ckaestne.medium.com/technical-debt-in-machine-learning-systems-62035b82b6de)
 
 
 

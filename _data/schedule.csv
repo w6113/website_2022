@@ -1,16 +1,16 @@
 color,date,slug,link,notes,misc
 #ffe4fc,Thu 01-19,Intro + Classic Systems Overview,,,
-#ffe4fc,Thu 01-26,Main memory query execution,,,"MonetDB, Hypr, Morsel-driven, Leanstore"
-#ffe4fc,Thu 02-02,Compilation,indexes,,
-#ffe4fc,Thu 02-09,Concurrency Control,join,,"Seeing is Believing, MVCC, TO, OCC"
-#ffe4fc,Thu 02-16,Query Optimization,distjoin,,Top down vs Bottom up
-#ffe4fc,Thu 02-23,Cost Estimation,exchange,,"Neo, Leo, Join size estimation, How good are cost estimators?"
-#ffe4fc,Thu 03-02,Joins,cascades,Plan+Team,"WCO, Streaming, Symmetric HJ"
-white,Thu 03-09,Materialized Views,colstore,,"Jun Survey, Noria, Croc"
-white,Thu 03-16,Dataflow Engines,cloudanalytics,,"Diff Dataflow, CIEL, DryadLinQ"
-white,Thu 03-23,Cloud Databases,compilation,,"Aurora, Snowflake, Redshift"
-white,Thu 03-30,In-DBMS ML,udfs,Status Update,Neo
-white,Thu 04-06,App-DBMS interop + UDFs,dataflow1,,"Alvin, UDFs"
-white,Thu 04-13,Web applications as Views,naiad,,"App2You, https://riffle.systems/essays/prelude/, DVMS, Convex, Spreadsheet driven web applications"
+#ffe4fc,Thu 01-26,Main memory query execution,memstore,,"MonetDB, Morsel-driven, Leanstore"
+#ffe4fc,Thu 02-02,Compilation,compilation,,Hyper
+#ffe4fc,Thu 02-09,Concurrency Control,cc,,"Seeing is Believing, MVCC, TO, OCC"
+#ffe4fc,Thu 02-16,Query Optimization,qopt,,Top down vs Bottom up
+#ffe4fc,Thu 02-23,Cost Estimation,costest,,"Neo, Leo, Join size estimation, How good are cost estimators?"
+#ffe4fc,Thu 03-02,Joins,join,Plan+Team,"WCO, Streaming, Symmetric HJ"
+white,Thu 03-09,Materialized Views,matviews,,
+white,Thu 03-16,Dataflow Engines,dataflow1,,"Diff Dataflow, CIEL, DryadLinQ"
+white,Thu 03-23,Cloud Databases,clouddb,,"Aurora, Snowflake, Redshift"
+white,Thu 03-30,In-DBMS ML,mlindb,Status Update,
+white,Thu 04-06,App-DBMS interop + UDFs,udfs,,"Alvin, UDFs"
+white,Thu 04-13,Web applications as Views,apps,,"App2You, https://riffle.systems/essays/prelude/, DVMS, Convex, Spreadsheet driven web applications"
 white,Thu 04-20,TBA,,,
 #ffe4fc,Thu 04-27,Projects,,,"<a href=""https://w6113.github.io/projects#showcase"">Link to Presentation Guideline</a>"
