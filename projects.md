@@ -171,6 +171,10 @@ In-DBMS ML: extend a DBMS to run statistical libraries/ML models/data analysis o
 
 Predict Query Results: given database statistics and a query, can a model predict the query results?  For what databases and classes of queries is this possible?
 
+<!--
+https://table-representation-learning.github.io/accepted-papers.html
+-->
+
 
 Can ML Do Data Analysis?  Data cleaning, preparation, and augmentation is one of the major challenges in data analysis and machine learning.   Dive into one task (e.g., data transform, value imputation, error detection, etc) and evaluate the efficacy of large language models across a variety of dataset domains.    See [Can Foundation Models Wrangle Your Data?](https://arxiv.org/pdf/2205.09911.pdf) for inspiration.
 
