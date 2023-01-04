@@ -160,7 +160,29 @@ There are many sources of potential research projects.  Here are some ideas:
 ## Project Suggestions
 
 
-TBA
+
+SmokedDuck uses a program analysis framework to analyze data intensive programs and recommend instrumentation points in the code that are sufficient to reconstruct tuple-level lineage.   
+
+* Help integrate the analysis framework with LLVM to automatically analyze programs
+* Apply the techniques to another vectorized data system such as [DataFusion](https://docs.rs/datafusion/latest/datafusion/) or [Monetdb](https://en.wikipedia.org/wiki/MonetDB) or [Velox](https://github.com/facebookincubator/velox).
+* Evaluate the trade-off and synergies between [logical query rewrites](https://ieeexplore.ieee.org/abstract/document/4812401/) for provenance and physical instrumentation in streaming dataflow systems like [differential dataflow](https://timelydataflow.github.io/differential-dataflow/)/[materialized](https://materialized.io).   You can get pretty far by simply performing logical rewrites of the dataflow operators without modifying the implementation of the dataflow system.
+
+In-DBMS ML: extend a DBMS to run statistical libraries/ML models/data analysis operations.   Evaluate against using a library external to the DBMS.   See projects like MadLib, PeekingDuck, MindsDB, Google BigQuery ML.
+
+Predict Query Results: given database statistics and a query, can a model predict the query results?  For what databases and classes of queries is this possible?
+
+
+Can ML Do Data Analysis?  Data cleaning, preparation, and augmentation is one of the major challenges in data analysis and machine learning.   Dive into one task (e.g., data transform, value imputation, error detection, etc) and evaluate the efficacy of large language models across a variety of dataset domains.    See [Can Foundation Models Wrangle Your Data?](https://arxiv.org/pdf/2205.09911.pdf) for inspiration.
+
+
+ML for Systems: different variations of RL are used to optimize system components, however the signals that these components have access to are too low level.   For instance, a learned index uses the sequence of reads and writes to adjust its internal layout.   Instead, it makes sense to use semantics from higher layers in the system (say, the buffer manager or query structur).   Show tha using such "higher layer" hints are effective for optimizing learned components and propose an API that system developers might use to register such hints.
+
+Progressive Cubes:
+Progressive encoding transforms a data item into a sequence of bytes where any prefix is an approximate result.
+JPEG is an example of progressively encoded data, a few bytes shows a low quality image, and adding a few more bytes improve the quality.
+Similarly, a breadth-first ordering of a secondary index is a progressive encoding -- larger prefixes correspond to a deeper tree that is more effective at filtering. Is it possible to compute and return a progressively encoded data cube, where larger prefixes correspond to finer granularities for the useful dimensions?  In other words, can you devise an algorithm that returns a progressively encoded data cube in less time than computing the cube and then encoding it?
+ 
+
 
 <!--
 

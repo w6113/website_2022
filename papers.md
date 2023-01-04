@@ -73,10 +73,14 @@ Some papers on reviewing papers
 Readings
 
 * Required: [R-Trees: A Dynamic Index Structure for Spatial Searching](./files/papers/rtree-gut84.pdf)
+* Optional: [An Experimental Evaluation and Investigation of Waves of Misery in R-trees](https://www.vldb.org/pvldb/vol15/p478-aref.pdf)
+* Optional: [The Next 50 Years in Database Indexing](The next 50 Years in Database Indexing)
 * Optional: [Generalized Search Trees for Database Systems](./files/papers/gist-vldb95.pdf)
 * Optional: [Survey: Modern B-Tree Techniques](./files/papers/btreesurvey-graefe.pdf)
 * Optional: [Qd-tree](https://dl.acm.org/doi/10.1145/3318464.3389770)
 * Optional: [Tsunami: Learned Multi-dim Indexes](https://arxiv.org/pdf/2006.13282.pdf?TB_iframe=true&width=370.8&height=658.8)
+* Optional: [From Auto-tuning One Size Fits All to Self-designed and Learned Data-intensive Systems](https://stratos.seas.harvard.edu/files/stratos/files/selfdesignedandlearnedsystems.pdf)
+
 
 Some things to think about:
 
@@ -97,7 +101,7 @@ Readings
 
 
 <a name='exchange' />
-### Exchange Operator    
+### Query Execution
 
 Readings
 
@@ -106,11 +110,12 @@ Readings
 
 
 <a name='qopt' />
-### Query Optimization Optimization    
+### Query Optimizers
 
 Readings
 
 * Required: [Volcano Optimizer](./files/papers/volcanooptimizer-icde93.pdf)
+* Optional: [Designing an Open Framework for Query Optimization and Compilation](https://www.vldb.org/pvldb/vol15/p2389-jungmair.pdf)
 * Optional: [Orca: A Modular Query Optimizer Architecture for Big Data](./files/papers/orca.pdf)
 * Optional: [Cascades](./files/papers/cascades-graefe.pdf)
 * Optional: [Cockroach blogpost: How we built a cost-based SQL optimizer](https://www.cockroachlabs.com/blog/building-cost-based-sql-optimizer/)
@@ -136,18 +141,8 @@ Readings
 ### Main-memory Systems
 
 * [MonetDB/X100: Hyper-Pipelining Query Execution](./files/papers/monetdb-cidr05.pdf)
-* [Morsel-Driven Query Execution](#)
-* [Leanstore](#)
-
-<a name="clouddb" />
-### Cloud-scale Analytics
-
-* Required: [Dremel Test-of-Time Keynote](https://www.youtube.com/watch?v=9GutzPX6ufo)
-* Optional: [The Snowflake Elastic Data Warehouse](./files/papers/snowflake.pdf)
-* Optional: [Dremel: A Decade of Interactive SQL Analysis at Web Scale](http://www.vldb.org/pvldb/vol13/p3461-melnik.pdf)
-* Optional: [Original Dremel paper](https://dl.acm.org/doi/pdf/10.14778/1920841.1920886)
-* Optional: [Dewitt's Cloud DB talk slides](./files/papers/dewittclouddbtalk.pptx)
-* Optional: [Choosing a Cloud DBMS](./files/papers/choosingclouddb.pdf)
+* [Morsel-Driven Query Execution](./files/papers/morsel.pdf)
+* [Leanstore](./files/papers/leanstore.pdf)
 
 
 <a name='compilation' />
@@ -172,19 +167,34 @@ Some things to think about when reading
 
 
 
+
+<a name="clouddb" />
+### Cloud-scale Analytics
+
+* Required: [Dremel Test-of-Time Keynote](https://www.youtube.com/watch?v=9GutzPX6ufo)
+* Optional: [The Snowflake Elastic Data Warehouse](./files/papers/snowflake.pdf)
+* Optional: [Dremel: A Decade of Interactive SQL Analysis at Web Scale](http://www.vldb.org/pvldb/vol13/p3461-melnik.pdf)
+* Optional: [Original Dremel paper](https://dl.acm.org/doi/pdf/10.14778/1920841.1920886)
+* Optional: [Dewitt's Cloud DB talk slides](./files/papers/dewittclouddbtalk.pptx)
+* Optional: [Choosing a Cloud DBMS](./files/papers/choosingclouddb.pdf)
+
+
+
+
 <a name='udfs' />
 ### Hybrid Caching/UDFs    
 
 Readings
 
-* Required: [Hybrid Caching](./files/papers/caching-sigmod1996.pdf)
+* Optional: [Froid: Optimizing Imperative Programs in RDBMSes](./files/papers/froid.pdf) ([Research Talk](https://www.youtube.com/watch?v=Xyvpcf2RtO4))
+* Optional: [User-Defined Operators](https://www.vldb.org/pvldb/vol15/p1119-sichert.pdf)
+* Optional: [YeSQL: “You extend SQL”](https://www.vldb.org/pvldb/vol15/p2270-foufoulas.pdf)
 * Optional: [Tuplex: Data Science in Python at Native Code Speed](http://cs.brown.edu/~lspiegel/files/Tuplex_Preprint2020.pdf)
 * Optional: [Exploiting Correlations for Expensive Predicate Evaluation](https://arxiv.org/pdf/1411.3374.pdf)
 * Optional: [Optimization of Queries with User-defined Predicates](http://www.vldb.org/conf/1996/P087.PDF)
 * Optional: [Probabilistic Predicates](https://www.microsoft.com/en-us/research/publication/accelerating-machine-learning-queries-with-probabilistic-predicates/)
-* Optional: [Froid: Optimizing Imperative Programs in RDBMSes](./files/papers/froid.pdf)
-  * [Research Talk](https://www.youtube.com/watch?v=Xyvpcf2RtO4)
 * Optional: [Compiling PL/SQL Away](https://arxiv.org/pdf/1909.03291.pdf)
+* Optional: [Hybrid Caching](./files/papers/caching-sigmod1996.pdf)
 * Optional: [Flare: Optimizing Apache Spark with Native Compilation](https://www.usenix.org/system/files/osdi18-essertel.pdf)
 
 
@@ -233,7 +243,7 @@ Some notes to guide your reading and thinking.
 
 * [Convex](https://www.youtube.com/watch?v=iizcidmSwJ4CMU)
 * [Do-It-Yourself Database-Driven Web Applications](https://www.skylineuniversity.ac.ae/pdf/database/Database%20driven%20web%20sites.pdf)
-* [DVMS]()
+* [DVMS](#)
 * [QUILT](https://dl.acm.org/doi/pdf/10.1145/2642918.2647387)
 * [Building data-centric apps with a reactive relational database](https://riffle.systems/essays/prelude/)
 
@@ -284,6 +294,15 @@ Read one of the two required papers:
 * Optional: [Provenance for Interactive Visualizations](https://www.dropbox.com/s/32aid7isd2arx47/smoke-hilda18-cr.pdf?dl=0)
 * Optional: [Titian: Data Provenance Support in Spark](http://www.vldb.org/pvldb/vol9/p216-interlandi.pdf)
 
+<a name="datamarkets"/>
+### Data Markets
+
+* Data Station
+* Data Augmentation
+* Kitana
+* [Selective Data Acquisition in the Wild for Model Charging](https://www.vldb.org/pvldb/vol15/p1466-li.pdf)
+* Snowflake, Amazon, etc
+
 <a name="costest"/>
 ### Cost Estimation
 
@@ -291,6 +310,7 @@ Read one of the two required papers:
 * Neo
 * Leo
 * Join Size Estimation
+* [Cardinality Estimation in DBMS: A Comprehensive Benchmark Evaluation](https://www.vldb.org/pvldb/vol15/p752-zhu.pdf)
 
 <a name="cc"/>
 ### Optimistic and Multiversion Concurrency Control
@@ -301,16 +321,6 @@ Read one of the two required papers:
 * Optional: [An Empirical Evaluation of In-Memory Multi-Version Concurrency Control](http://www.vldb.org/pvldb/vol10/p781-Wu.pdf)
   * Concurrency control is hard, skim this paper to get a sense of the complexities.
 
-
-<a name="replication" />
-### Distributed Consistency under Replication
-
-* [The original Raft paper](https://raft.github.io/raft.pdf)
-* (Optional) [Viewstamped Replication Revisited](http://pmg.csail.mit.edu/papers/vr-revisited.pdf)
-* (Optional) [Living Without Atomic Clocks blog post](https://www.cockroachlabs.com/blog/living-without-atomic-clocks/)
-* (Optional) [Raft Refloated](http://www.cl.cam.ac.uk/~ms705/pub/papers/2015-osr-raft.pdf) 
-* (Optional) [Google's Paxos Made LIve](https://research.google.com/archive/paxos_made_live.html)
-* (Optional) [Anna: A Crazy Fast, Super-Scalable, Flexibly Consistent KVS](https://rise.cs.berkeley.edu/blog/anna-kvs/)
 
 
 <a name="mlindb" />
@@ -385,6 +395,21 @@ Readings
 * Optional: [The End of an Architectural Era](http://nms.csail.mit.edu/~stavros/pubs/hstore.pdf)
 
 
+<a name="rep"/>
+### DB and Query Representations
+
+* [QueryFormer: A Tree Transformer Model for Query Plan Representation](https://www.vldb.org/pvldb/vol15/p1658-zhao.pdf)
+
+
+<a name="replication" />
+### Distributed Consistency under Replication
+
+* [The original Raft paper](https://raft.github.io/raft.pdf)
+* (Optional) [Viewstamped Replication Revisited](http://pmg.csail.mit.edu/papers/vr-revisited.pdf)
+* (Optional) [Living Without Atomic Clocks blog post](https://www.cockroachlabs.com/blog/living-without-atomic-clocks/)
+* (Optional) [Raft Refloated](http://www.cl.cam.ac.uk/~ms705/pub/papers/2015-osr-raft.pdf) 
+* (Optional) [Google's Paxos Made LIve](https://research.google.com/archive/paxos_made_live.html)
+* (Optional) [Anna: A Crazy Fast, Super-Scalable, Flexibly Consistent KVS](https://rise.cs.berkeley.edu/blog/anna-kvs/)
 
 
 <!--
@@ -415,11 +440,6 @@ Readings
 * Optional: [Automatically Indexing Millions of Databases in Microsoft Azure SQL Database](https://www.microsoft.com/en-us/research/uploads/prod/2019/02/autoindexing_azuredb.pdf)
 * Optional: [Query-based Workload Forecasting for Self-Driving Database Management Systems](https://www.cs.cmu.edu/~dvanaken/papers/forecasting-sigmod18.pdf)
 * Optional: [Database Cracking](https://stratos.seas.harvard.edu/files/IKM_CIDR07.pdf)
-
-<a name="learned" />
-### Learned and Adaptive Indexes
-
-* [From Auto-tuning One Size Fits All to Self-designed and Learned Data-intensive Systems](https://stratos.seas.harvard.edu/files/stratos/files/selfdesignedandlearnedsystems.pdf)
 
 
 <a name='joinopt' />
@@ -503,7 +523,8 @@ Readings
 
 
 
+<!--
 <a name="pvd"/>
 ### Physical Database Design
+-->
 
-* TBA
