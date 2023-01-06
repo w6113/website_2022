@@ -145,8 +145,10 @@ The goal of this type of project is to identify a new problem, propose an algori
 Its primary difference from the previous type of project is that it starts from a novel problem and seeks to solve it using whatever means make sense, 
 whereas Reproduce and Extend Projects start with an established problem and solution.
 
+<!--
 The key challenge for this type of project is to establish novelty.  To do so, there should be _some_ example of your project that prior work cannot
 easily solve with some minor tweaks.  
+-->
 
 There are many sources of potential research projects.  Here are some ideas:
 
