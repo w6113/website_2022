@@ -161,14 +161,6 @@ There are many sources of potential research projects.  Here are some ideas:
 <a name="suggestions"></a>
 ## Project Suggestions
 
-
-
-SmokedDuck uses a program analysis framework to analyze data intensive programs and recommend instrumentation points in the code that are sufficient to reconstruct tuple-level lineage.   
-
-* Help integrate the analysis framework with LLVM to automatically analyze programs
-* Apply the techniques to another vectorized data system such as [DataFusion](https://docs.rs/datafusion/latest/datafusion/) or [Monetdb](https://en.wikipedia.org/wiki/MonetDB) or [Velox](https://github.com/facebookincubator/velox).
-* Evaluate the trade-off and synergies between [logical query rewrites](https://ieeexplore.ieee.org/abstract/document/4812401/) for provenance and physical instrumentation in streaming dataflow systems like [differential dataflow](https://timelydataflow.github.io/differential-dataflow/)/[materialized](https://materialized.io).   You can get pretty far by simply performing logical rewrites of the dataflow operators without modifying the implementation of the dataflow system.
-
 In-DBMS ML: extend a DBMS to run statistical libraries/ML models/data analysis operations.   Evaluate against using a library external to the DBMS.   See projects like MadLib, PeekingDuck, MindsDB, Google BigQuery ML.
 
 Predict Query Results: given database statistics and a query, can a model predict the query results?  For what databases and classes of queries is this possible?
@@ -188,6 +180,30 @@ Progressive encoding transforms a data item into a sequence of bytes where any p
 JPEG is an example of progressively encoded data, a few bytes shows a low quality image, and adding a few more bytes improve the quality.
 Similarly, a breadth-first ordering of a secondary index is a progressive encoding -- larger prefixes correspond to a deeper tree that is more effective at filtering. Is it possible to compute and return a progressively encoded data cube, where larger prefixes correspond to finer granularities for the useful dimensions?  In other words, can you devise an algorithm that returns a progressively encoded data cube in less time than computing the cube and then encoding it?
  
+
+
+
+### JoinBoost Projects
+
+JoinBoost is an In-DBMS ML project that scales gradient boosted trees to massive datasets and normalized schemas that can run in any DBMS.  See [the GitHub repo for details](https://github.com/zachary62/JoinBoost/).  If interested, contact Zach at zh2408@columbia.edu.
+
+
+1.Cloud Database Evaluation for JoinBoost: JoinBoost is currently designed for local databases (e.g., duckdb). However, cloud databases often have higher latency but better concurrency. This may be suitable for random forests, where all trees can be trained together. It is worth evaluating the use of JoinBoost in cloud databases and implementing any necessary optimizations.
+
+2. Automatic Feature Augmentation for JoinBoost: 
+Feature augmentation is a common technique in data science (e.g., upgini). JoinBoost is scalable to the number of features, so it is worth exploring the possibility of extending it to automatically augment data and evaluating the performance improvements on kaggle competitions.
+
+3. Interpretability of JoinBoost: 
+Explainable boosting machines (EBMs) are popular when human understanding of the machine learning model is necessary. It is worth studying the methods used in EBMs and implementing their integration into JoinBoost.
+
+### Fast Lineage in Fast Analytical DBMSes
+SmokedDuck uses a program analysis framework to analyze data intensive programs and recommend instrumentation points in the code that are sufficient to reconstruct tuple-level lineage.   
+
+* Help integrate the analysis framework with LLVM to automatically analyze programs
+* Apply the techniques to another vectorized data system such as [DataFusion](https://docs.rs/datafusion/latest/datafusion/) or [Monetdb](https://en.wikipedia.org/wiki/MonetDB) or [Velox](https://github.com/facebookincubator/velox).
+* Evaluate the trade-off and synergies between [logical query rewrites](https://ieeexplore.ieee.org/abstract/document/4812401/) for provenance and physical instrumentation in streaming dataflow systems like [differential dataflow](https://timelydataflow.github.io/differential-dataflow/)/[materialized](https://materialized.io).   You can get pretty far by simply performing logical rewrites of the dataflow operators without modifying the implementation of the dataflow system.
+
+
 
 
 <!--
