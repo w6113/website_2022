@@ -320,6 +320,7 @@ Read one of the two required papers:
 * Optional: [Silo](http://people.csail.mit.edu/stephentu/papers/silo.pdf)
 * Optional: [An Empirical Evaluation of In-Memory Multi-Version Concurrency Control](http://www.vldb.org/pvldb/vol10/p781-Wu.pdf)
   * Concurrency control is hard, skim this paper to get a sense of the complexities.
+* Optional: [Optimistic Lock Coupling](https://web.archive.org/web/20220306194839id_/http://sites.computer.org/debull/A19mar/p73.pdf)
 
 
 
