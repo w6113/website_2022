@@ -157,6 +157,15 @@ There are many sources of potential research projects.  Here are some ideas:
 * There are too many approaches to solve a problem and it's not clear which one to use under what conditions.  Run a bake-off and evaluate.
 * You did a Reproduce and Extend Project, and found that the approaches don't actually work in real scenarios.  Make it work
 
+The following are open source DBMSes that you can use to implement your projects:
+
+* Wisconsin's [Hustle](https://github.com/UWHustle/hustle) or earlier [Quickstep](https://github.com/UWQuickstep/quickstep)
+* [DuckDB](https://duckdb.org/)
+* [MonetDB](https://www.monetdb.org/)
+* [sqlGlot](https://github.com/tobymao/sqlglot)
+* [mutable](https://github.com/mutable-org/mutable)
+* [Datafusion](https://github.com/apache/arrow-datafusion)
+
 
 <a name="suggestions"></a>
 ## Project Suggestions
@@ -182,13 +191,16 @@ Similarly, a breadth-first ordering of a secondary index is a progressive encodi
  
 
 
+### Build on Existing Projects
 
-### JoinBoost Projects
+The following build on existing projects in the Database Research Group.
+
+#### JoinBoost Projects
 
 JoinBoost is an In-DBMS ML project that scales gradient boosted trees to massive datasets and normalized schemas that can run in any DBMS.  See [the GitHub repo for details](https://github.com/zachary62/JoinBoost/).  If interested, contact Zach at zh2408@columbia.edu.
 
 
-1.Cloud Database Evaluation for JoinBoost: JoinBoost is currently designed for local databases (e.g., duckdb). However, cloud databases often have higher latency but better concurrency. This may be suitable for random forests, where all trees can be trained together. It is worth evaluating the use of JoinBoost in cloud databases and implementing any necessary optimizations.
+1. Cloud Database Evaluation for JoinBoost: JoinBoost is currently designed for local databases (e.g., duckdb). However, cloud databases often have higher latency but better concurrency. This may be suitable for random forests, where all trees can be trained together. It is worth evaluating the use of JoinBoost in cloud databases and implementing any necessary optimizations.
 
 2. Automatic Feature Augmentation for JoinBoost: 
 Feature augmentation is a common technique in data science (e.g., upgini). JoinBoost is scalable to the number of features, so it is worth exploring the possibility of extending it to automatically augment data and evaluating the performance improvements on kaggle competitions.
@@ -196,12 +208,12 @@ Feature augmentation is a common technique in data science (e.g., upgini). JoinB
 3. Interpretability of JoinBoost: 
 Explainable boosting machines (EBMs) are popular when human understanding of the machine learning model is necessary. It is worth studying the methods used in EBMs and implementing their integration into JoinBoost.
 
-### Fast Lineage in Fast Analytical DBMSes
-SmokedDuck uses a program analysis framework to analyze data intensive programs and recommend instrumentation points in the code that are sufficient to reconstruct tuple-level lineage.   
+#### Fast Lineage in Fast Analytical DBMSes
+SmokedDuck uses a program analysis framework to analyze data intensive programs and recommend instrumentation points in the code that are sufficient to reconstruct tuple-level lineage.     These reduce the run-time overhead of capturing lineage from >1000x to ~5%, making lineage practical for real applications.  If interested, contact Haneen at ham2156@columbia.edu
 
-* Help integrate the analysis framework with LLVM to automatically analyze programs
-* Apply the techniques to another vectorized data system such as [DataFusion](https://docs.rs/datafusion/latest/datafusion/) or [Monetdb](https://en.wikipedia.org/wiki/MonetDB) or [Velox](https://github.com/facebookincubator/velox).
-* Evaluate the trade-off and synergies between [logical query rewrites](https://ieeexplore.ieee.org/abstract/document/4812401/) for provenance and physical instrumentation in streaming dataflow systems like [differential dataflow](https://timelydataflow.github.io/differential-dataflow/)/[materialized](https://materialized.io).   You can get pretty far by simply performing logical rewrites of the dataflow operators without modifying the implementation of the dataflow system.
+1. Help integrate the analysis framework with LLVM to automatically analyze programs
+2. Apply the techniques to another vectorized data system such as [DataFusion](https://docs.rs/datafusion/latest/datafusion/) or [Monetdb](https://en.wikipedia.org/wiki/MonetDB) or [Velox](https://github.com/facebookincubator/velox).
+3. Evaluate the trade-off and synergies between [logical query rewrites](https://ieeexplore.ieee.org/abstract/document/4812401/) for provenance and physical instrumentation in streaming dataflow systems like [differential dataflow](https://timelydataflow.github.io/differential-dataflow/)/[materialized](https://materialized.io).   You can get pretty far by simply performing logical rewrites of the dataflow operators without modifying the implementation of the dataflow system.
 
 
 

@@ -23,14 +23,27 @@ Ideally, you will be comfortable with reading code that is not yours, open to tr
 <a name="participation"></a>
 #### Participation
 
-Participation is mandatory.  
+Participation is mandatory.    See the [first class' slides](https://docs.google.com/presentation/d/1_cHN9TdNFsAv8w0mEak6sWlOosEof8lY2x1vPDQ_PVk/edit#slide=id.g1c50e41008a_0_30)
 
 
-Since the course is small, it is expected that students will help contribute to the in person and online discussions.  This includes:
+Slack
 
-* Asking and answering questions related to the class's readings and lectures.  
-* Making observations about the lecture's relationship with products or society 
-* Asking and answering questions on piazza
+* Heavy use of Slack, Google Drive features.
+* Discussion about the next class will be in the `#class-DATE` slack channel.
+* You are expected to ask and answer questions on slack.
+
+Students are given a role to focus on in the next class's discussion.
+
+* Before each class
+  * By Monday 10PM: start slack private message with teammates 
+  * By Tuesday 10PM: post to next class' slack channel at least one question about the papers.
+  * By Wednesday 10PM: 
+    * add team slides to the class' Google Slides.  
+    * Respond to 1+ question in Slack
+* During each class
+  * One person from each role takes ~5 minutes to discuss the paper from your role's perspective
+  * Discuss and ask questions 
+
 
 
 

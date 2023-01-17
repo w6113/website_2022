@@ -1,16 +1,16 @@
 color,date,slug,link,notes,misc
-#ffe4fc,Thu 01-19,Intro + Classic Systems Overview,,,
-white,Thu 01-26,Main Memory Query Execution,memstore,,"MonetDB, Morsel-driven, Leanstore"
-#ffe4fc,Thu 02-02,Query Compilation,compilation,,Hyper
+#ffe4fc,Thu 01-19,Intro + Classic Systems Overview,,,Preview of systems and topics of the semester + relevance of classic systems
+white,Thu 01-26,Indexes,indexes,,Classic and Learned Indexes
+#ffe4fc,Thu 02-02,Joins,join,,"Worst case optimal, SkinnerDB"
 white,Thu 02-09,Query Optimization,qopt,,"Top down, Bottom up, Bao"
 #ffe4fc,Thu 02-16,Cost Estimation,costest,,"Neo/Leo, Join size estimation, How good are cost estimators?"
-white,Thu 02-23,Joins,join,,"WCO, Streaming, Symmetric HJ"
-#ffe4fc,Thu 03-02,Dataflow Engines,dataflow1,Plan+Team,"Diff Dataflow, CIEL, DryadLinQ"
-white,Thu 03-09,Cloud Analytic DBMSes,clouddb,,"Snowflake, Redshift"
-#ffe4fc,Thu 03-16,Cloud Transactional DBMSes,,,"Aurora, AlloyDB"
-white,Thu 03-23,,,,
-#ffe4fc,Thu 03-30,In-DBMS ML,mlindb,Status Update,
+white,Thu 02-23,Concurrency Control,,,TBA
+#ffe4fc,Thu 03-02,Main Memory Query Execution,compilation,Plan+Team,"Hyper, Morsel-driven Execution"
+white,Thu 03-09,Dataflow Engines,dataflow1,,Differential Dataflow
+#ffe4fc,Thu 03-16,spring recess!,,,
+white,Thu 03-23,In-DBMS ML,mlindb,,
+#ffe4fc,Thu 03-30,Learning over Joins,mlindb2,Status Update,
 white,Thu 04-06,App-DBMS interop + UDFs,udfs,,
-#ffe4fc,Thu 04-13,Web applications as Views,apps,,
-white,Thu 04-20,Data Markets,datamarkets,,
+#ffe4fc,Thu 04-13,Data Quality,apps,,"Holo Clean, complaint-driven data debugging, foundation models for data prep"
+white,Thu 04-20,Data Markets,datamarkets,,Data augmentation and data markets
 #ffe4fc,Thu 04-27,Projects,,,"<a href=""https://w6113.github.io/projects#showcase"">Link to Presentation Guideline</a>"

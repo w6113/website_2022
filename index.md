@@ -15,7 +15,7 @@ Ideally, you will be comfortable with reading code that is not yours, open to tr
 
 See [FAQ](./syllabus#faq) for difference between 6113 and the other database courses. 
 
-<small style="color: grey">Course capped at 25. </small>
+<!--<small style="color: grey">Course capped at 25. </small>-->
 
 
 #### Information 

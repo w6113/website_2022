@@ -70,13 +70,17 @@ Some papers on reviewing papers
 <a name='indexes' />
 ### Indexes    
 
-Readings
+Paper 1
 
 * Required: [R-Trees: A Dynamic Index Structure for Spatial Searching](./files/papers/rtree-gut84.pdf)
-* Optional: [An Experimental Evaluation and Investigation of Waves of Misery in R-trees](https://www.vldb.org/pvldb/vol15/p478-aref.pdf)
-* Optional: [The Next 50 Years in Database Indexing](The next 50 Years in Database Indexing)
 * Optional: [Generalized Search Trees for Database Systems](./files/papers/gist-vldb95.pdf)
+* Optional: [An Experimental Evaluation and Investigation of Waves of Misery in R-trees](https://www.vldb.org/pvldb/vol15/p478-aref.pdf)
 * Optional: [Survey: Modern B-Tree Techniques](./files/papers/btreesurvey-graefe.pdf)
+
+Paper 2 for Roles:
+
+* Required:
+* Optional: [The Next 50 Years in Database Indexing](The next 50 Years in Database Indexing)
 * Optional: [Qd-tree](https://dl.acm.org/doi/10.1145/3318464.3389770)
 * Optional: [Tsunami: Learned Multi-dim Indexes](https://arxiv.org/pdf/2006.13282.pdf?TB_iframe=true&width=370.8&height=658.8)
 * Optional: [From Auto-tuning One Size Fits All to Self-designed and Learned Data-intensive Systems](https://stratos.seas.harvard.edu/files/stratos/files/selfdesignedandlearnedsystems.pdf)
@@ -90,10 +94,16 @@ Some things to think about:
 <a name='join' />
 ### Joins   
 
-Readings
+Paper 1:
 
 * Required: [Shapiro: Join Processing in Database Systems with Large Main Memories](./files/papers/gracejoin-shapiro.pdf)
+* Required: [Worst Case Optimal Joins](https://columbiadb.github.io/files/papers/optimaljoin.pdf)
+
 * Optional: [Ripple Joins for Online Aggregation](http://www.cs.cmu.edu/~natassa/courses/15-823/F02/papers/decision-ripple-sigmod99.pdf)
+
+Paper 2 for Roles:
+
+* Required: [R\* Optimizer](https://www.seas.upenn.edu/~zives/05s/cis650/papers/r-star.pdf) Sections 5 onward
 * Optional: [The Gamma database machine project](https://wiki.epfl.ch/edicpublic/documents/Candidacy%20exam/gamma.pdf)
 * Optional: [TrackJoin](./files/papers/trackjoin-sigmod14.pdf)
 * Optional: [Parallel Database systems: the future of high performance database systems](./files/papers/paralleldbsystems-dewitt.pdf)
@@ -315,6 +325,7 @@ Read one of the two required papers:
 <a name="cc"/>
 ### Optimistic and Multiversion Concurrency Control
 
+* Required: [Concurrency Control in Distributed Database Systems](./files/papers/bernstein-csur1981.pdf)
 * Required: [Seeing is Believing](https://drive.google.com/file/d/1we7ok4C8ra2-6fP1yT7EJ-Rv9LSGCiUt/view)
 * Optional: [On Optimistic Methods for Concurrency Control](http://sites.fas.harvard.edu/~cs265/papers/kung-1981.pdf)
 * Optional: [Silo](http://people.csail.mit.edu/stephentu/papers/silo.pdf)
@@ -447,7 +458,6 @@ Readings
 ### Join Optimization
 
 * Required: [Dynamic programming strikes back](https://dl.acm.org/doi/pdf/10.1145/1376616.1376672)
-* Required: [Worst Case Optimal Joins](https://columbiadb.github.io/files/papers/optimaljoin.pdf)
 * Optional: [Learning to Optimize Join Queries With Deep Reinforcement Learning](https://arxiv.org/pdf/1808.03196.pdf)
 * Optional: [SkinnerDB: Regret-Bounded Query Evaluation via Reinforcement Learning](https://arxiv.org/pdf/1901.05152.pdf)
 * Optional: [Selectivity Estimation using Probabilistic Models](https://ai.stanford.edu/~koller/Papers/Getoor+al:SIGMOD01.pdf)
