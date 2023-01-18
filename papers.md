@@ -62,9 +62,15 @@ Some papers on reviewing papers
 <a name='review1' />
 ### Review
 
-* Optional: [Architecture of RDBMS Survey](./files/papers/archdbsys-fntdb07.pdf)
-* Optional: [What goes around comes around](./files/papers/whatgoesaround-stonebraker.pdf)
-* Optional: [Query Evaluation Techniques for Large Databases](https://dl.acm.org/doi/pdf/10.1145/152610.152611)
+Required
+
+* [Architecture of RDBMS Survey](./files/papers/archdbsys-fntdb07.pdf)
+* [What goes around comes around](./files/papers/whatgoesaround-stonebraker.pdf) (skim)
+
+
+Further Reading
+
+* [Query Evaluation Techniques for Large Databases](https://dl.acm.org/doi/pdf/10.1145/152610.152611)
 
 
 <a name='indexes' />
@@ -73,22 +79,24 @@ Some papers on reviewing papers
 Required
 
 * Required Background: [Generalized Search Trees for Database Systems](./files/papers/gist-vldb95.pdf)
-* Main Topic: [Case for Learned Indexes](https://courses.cs.washington.edu/courses/csep544/21sp/papers/kraska-case-for-learned-index-sigmod-2018.pdf)  ([SIGMOD talk on youtube](https://www.youtube.com/watch?v=MM33CvATm_M))
-
-Further reading for background
-
-* [R-Trees: A Dynamic Index Structure for Spatial Searching](./files/papers/rtree-gut84.pdf)
-* [An Experimental Evaluation and Investigation of Waves of Misery in R-trees](https://www.vldb.org/pvldb/vol15/p478-aref.pdf)
-* [Survey: Modern B-Tree Techniques](./files/papers/btreesurvey-graefe.pdf)
+* Main Topic: [Case for Learned Indexes](https://courses.cs.washington.edu/courses/csep544/21sp/papers/kraska-case-for-learned-index-sigmod-2018.pdf)  ([youtube talk](https://www.youtube.com/watch?v=MM33CvATm_M))
 
 
-Further reading for instance optimized indexes
 
-* [The Data Calculator](https://faculty.cc.gatech.edu/~jarulraj/courses/8803-f18/papers/data_calculator.pdf) ([SIGMOD talk on youtube](https://www.youtube.com/watch?v=uFtkA3CEWY0))
-* [The Next 50 Years in Database Indexing](The next 50 Years in Database Indexing)
-* [Revenge of Interpolation Search](https://pages.cs.wisc.edu/~jignesh/publ/Revenge_of_the_Interpolation_Search.pdf)
-* [Qd-tree](https://dl.acm.org/doi/10.1145/3318464.3389770)
-* [Tsunami: Learned Multi-dim Indexes](https://arxiv.org/pdf/2006.13282.pdf?TB_iframe=true&width=370.8&height=658.8)
+Further reading 
+
+* Classic Indexes
+  * [R-Trees: A Dynamic Index Structure for Spatial Searching](./files/papers/rtree-gut84.pdf)
+  * [An Experimental Evaluation and Investigation of Waves of Misery in R-trees](https://www.vldb.org/pvldb/vol15/p478-aref.pdf)
+  * [Survey: Modern B-Tree Techniques](./files/papers/btreesurvey-graefe.pdf)
+  * [The Log-structured merge-tree (LSM-tree)](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C10&q=The+log-structured+merge-tree+%28LSM-tree%29&btnG=)
+* Generating New Index Designs using ML
+  * [The Next 50 Years in Database Indexing](https://dl.acm.org/doi/abs/10.14778/3494124.3494136)
+  * [The Data Calculator](https://faculty.cc.gatech.edu/~jarulraj/courses/8803-f18/papers/data_calculator.pdf) ([youtube talk](https://www.youtube.com/watch?v=uFtkA3CEWY0))
+* Learned Indexes
+  * [Revenge of Interpolation Search](https://pages.cs.wisc.edu/~jignesh/publ/Revenge_of_the_Interpolation_Search.pdf)
+  * [Qd-tree](https://dl.acm.org/doi/10.1145/3318464.3389770)
+  * [Tsunami: Learned Multi-dim Indexes](https://arxiv.org/pdf/2006.13282.pdf?TB_iframe=true&width=370.8&height=658.8)
 
 
 <a name='join' />
@@ -123,25 +131,23 @@ Readings
 * Required Background: [What We Found Running the Join Order Benchmark](https://db.in.tum.de/~leis/papers/lookingglass.pdf)
 * Main Topic: [Bao: Learning to Steer Query Optizers](https://arxiv.org/pdf/2004.03814.pdf)
 
-Further reading about classic query optimization
+Further reading 
 
 * [Designing an Open Framework for Query Optimization and Compilation](https://www.vldb.org/pvldb/vol15/p2389-jungmair.pdf)
-* Classics
+* Classics Optimizer Design
   * [Volcano Optimizer](./files/papers/volcanooptimizer-icde93.pdf)
   * [Cascades](./files/papers/cascades-graefe.pdf)
   * [Dynamic programming strikes back](https://dl.acm.org/doi/pdf/10.1145/1376616.1376672)
-* Industry
+* Optimizers in Industry
   * [PostgreSQL Optimizer Documentation](https://www.postgresql.org/docs/current/geqo.html)
   * [Cockroach blogpost: How we built a cost-based SQL optimizer](https://www.cockroachlabs.com/blog/building-cost-based-sql-optimizer/)
   * [Book: Inside the SQLServer Query Optimizer](./files/papers/inside-the-sql-server-query-optimizer.pdf)
+* Learned Optimizers
+  * [Learning to Optimize Join Queries With Deep Reinforcement Learning](https://arxiv.org/pdf/1808.03196.pdf)
+  * [Selectivity Estimation using Probabilistic Models](https://ai.stanford.edu/~koller/Papers/Getoor+al:SIGMOD01.pdf)
+  * [Leo - DB2's Learning Optimizer](https://www.vldb.org/conf/2001/P019.pdf)
 
 <!--* [CH Benchmark](https://db.in.tum.de/research/projects/CHbenCHmark/index.shtml?lang=en)-->
-
-Further reading about learned optimizers
-
-* [Learning to Optimize Join Queries With Deep Reinforcement Learning](https://arxiv.org/pdf/1808.03196.pdf)
-* [Selectivity Estimation using Probabilistic Models](https://ai.stanford.edu/~koller/Papers/Getoor+al:SIGMOD01.pdf)
-* [Leo - DB2's Learning Optimizer](https://www.vldb.org/conf/2001/P019.pdf)
 
 
 <a name="costest"/>
@@ -160,6 +166,23 @@ Further Reading
 * [Cardinality Estimation in DBMS: A Comprehensive Benchmark Evaluation](https://www.vldb.org/pvldb/vol15/p752-zhu.pdf)
 * [Learned Cardinality Estimation: An In-depth Study](https://dl.acm.org/doi/pdf/10.1145/3514221.3526154)
 * [Learning Optimizer for Shared Clouds](http://www.vldb.org/pvldb/vol12/p210-wu.pdf)
+
+
+<a name="cc"/>
+### Concurrency Control
+
+Required
+
+* Required Background: TBA
+* Main Topic: TBA
+
+Further Reading
+
+* [Concurrency Control in Distributed Database Systems](./files/papers/bernstein-csur1981.pdf)
+* [Seeing is Believing](https://drive.google.com/file/d/1we7ok4C8ra2-6fP1yT7EJ-Rv9LSGCiUt/view)
+* [On Optimistic Methods for Concurrency Control](http://sites.fas.harvard.edu/~cs265/papers/kung-1981.pdf)
+* [An Empirical Evaluation of In-Memory Multi-Version Concurrency Control](http://www.vldb.org/pvldb/vol10/p781-Wu.pdf) 
+* [Optimistic Lock Coupling](https://web.archive.org/web/20220306194839id_/http://sites.computer.org/debull/A19mar/p73.pdf)
 
 
 
@@ -198,25 +221,27 @@ Some things to think about when reading
 
 Required
 
-* Required Background
-* Main Topic
+* Required Background: TBA
+* Main Topic: [Naiad: A Timely Dataflow System](https://www.microsoft.com/en-us/research/wp-content/uploads/2013/11/naiad_sosp2013.pdf) ([Video introduction](https://www.youtube.com/watch?v=yOnPmVf4YWo), [commercial software](https://materialize.io/))
 
 Further Reading
 
-* [SEDA: An Architecture for Well-Conditioned, Scalable Internet Services](http://www.sosp.org/2001/papers/welsh.pdf)
-* [CIEL](https://www.cs.princeton.edu/courses/archive/fall13/cos518/papers/ciel.pdf)
-* [MapReduce](https://www.usenix.org/legacy/events/osdi04/tech/full_papers/dean/dean.pdf)
-* [RDDs](https://sfu-db.github.io/dbsystems/Papers/nsdi12-final138.pdf)
-* SparkSQL](https://sfu-db.github.io/dbsystems/Papers/SparkSQLSigmod2015.pdf)
-* [Spark (mainly examples)](http://static.usenix.org/events/hotcloud10/tech/full_papers/Zaharia.pdf)
 * [(Survey) State of the Art in Large scale Data Flow](./files/papers/kossmann-sotadistdbs.pdf)
-* [DryadLinq](http://michaelisard.com/pubs/sigmod09.pdf)
-* [Encapsulation of parallelism in the volcano query processing system](./files/papers/volcanoparallelism-89.pdf)
-* [Naiad: A Timely Dataflow System](https://www.microsoft.com/en-us/research/wp-content/uploads/2013/11/naiad_sosp2013.pdf) ([Video introduction](https://www.youtube.com/watch?v=yOnPmVf4YWo), [commercial software](https://materialize.io/))
-* [Discretized Streams](https://people.csail.mit.edu/matei/papers/2013/sosp_spark_streaming.pdf)
-* [Earlier CIDR paper](https://www.microsoft.com/en-us/research/wp-content/uploads/2013/01/differentialdataflow.pdf)
-* [Timely Dataflow](https://github.com/TimelyDataflow/timely-dataflow)
-* [Encapsulation of parallelism in the volcano query processing system](./files/papers/volcanoparallelism-89.pdf)
+* Classics
+  * [Encapsulation of parallelism in the volcano query processing system](./files/papers/volcanoparallelism-89.pdf)
+  * [SEDA: An Architecture for Well-Conditioned, Scalable Internet Services](http://www.sosp.org/2001/papers/welsh.pdf)
+  * [CIEL](https://www.cs.princeton.edu/courses/archive/fall13/cos518/papers/ciel.pdf)
+  * [RDDs](https://sfu-db.github.io/dbsystems/Papers/nsdi12-final138.pdf)
+* Big Data Era 
+  * [MapReduce](https://www.usenix.org/legacy/events/osdi04/tech/full_papers/dean/dean.pdf)
+  * [SparkSQL](https://sfu-db.github.io/dbsystems/Papers/SparkSQLSigmod2015.pdf)
+  * [Spark (mainly examples)](http://static.usenix.org/events/hotcloud10/tech/full_papers/Zaharia.pdf)
+  * [DryadLinq](http://michaelisard.com/pubs/sigmod09.pdf)
+  * [Discretized Streams](https://people.csail.mit.edu/matei/papers/2013/sosp_spark_streaming.pdf)
+* More Timely Dataflow
+  * [Earlier CIDR paper](https://www.microsoft.com/en-us/research/wp-content/uploads/2013/01/differentialdataflow.pdf)
+  * [Timely Dataflow Code](https://github.com/TimelyDataflow/timely-dataflow)
+  * [Scalability! But at what COST?](https://www.usenix.org/system/files/conference/hotos15/hotos15-paper-mcsherry.pdf)
 
 
 
@@ -281,37 +306,166 @@ Further Readings
 * [Flare: Optimizing Apache Spark with Native Compilation](https://www.usenix.org/system/files/osdi18-essertel.pdf)
 
 
+### Data Quality
+
+Required
+
+* Required Background: [From Cleaning Before ML to Cleaning For ML](http://sites.computer.org/debull/A21mar/p24.pdf)
+* Main Topic: [Can Foundation Models Wrangle Your Data?](https://arxiv.org/abs/2205.09911)
+
+Further Reading:
+
+* [HoloClean](https://arxiv.org/pdf/1702.00820.pdf)
+* [Complaint-Driven Training Data Debugging](https://dl.acm.org/doi/pdf/10.1145/3533028.3533305)
+
+
+<a name="datamarkets"/>
+### Data Markets
+
+Required
+
+* Required Background: [Revising Online Data Markets in 2022](http://raulcastrofernandez.com/papers/7_31CRstatusofDataMarkets_final.pdf)
+* Main Topic: TBA
+
+Further Reading
+
+* [Data Station](https://dl.acm.org/doi/abs/10.14778/3551793.3551861)
+* [Aurum](https://dspace.mit.edu/bitstream/handle/1721.1/137860/icde18-aurum.pdf?sequence=2&isAllowed=y)
+* [Kitana](#)
+* [Selective Data Acquisition in the Wild for Model Charging](https://www.vldb.org/pvldb/vol15/p1466-li.pdf)
+* Data Markets in the Wild
+  * Snowflake, Amazon, etc
+
+
+
+<a name="optional" />
+## Unscheduled Topics
+
+
+<a name="sysr"/>
+### System R Overview 
+
+Readings 
+
+* Required: <a href="./files/papers/systemr-retrospective.pdf">System R Retrospective</a>
+* Optional: <a href="./files/papers/ingres-retrospective.pdf">Ingres Design</a>
+
+
+Questions to consider
+
+* System R was an impressive research and engineering effort, and the reading is a retrospective of the 6 year project.  
+* The paper discusses "the Convoy Problem".  Discuss the problem:  What is it?  Why does it exist?
+* The paper discusses many many topics.  Identify and pick one aspect (different than the convoy problem) that you are particularly impressed with.  Discuss what and why.
+
+
+<a name='postgres' />
+### INGRES/POSTGRES    
+
+Readings
+
+* Required: [Design of Postgres (Initial design)](./files/papers/postgres-retrospective.pdf)
+* Optional: [The Postgres Next-Generation DBMS (Midterm design)](./files/papers/postgres-nextgen-cacm.pdf)
+* Optional: [Design of INGRES](./files/papers/ingres-retrospective.pdf)
+  * Worth skimming: QUEL, leveraging UNIX, concurrency control arguments
+* Optional: [The Landsharks are on the Squawk Box - Stonebraker Turing Award Lecture](https://cacm.acm.org/magazines/2016/2/197423-the-land-sharks-are-on-the-squawk-box/fulltext)
+
+
+Questions to consider
+
+* What were the main goals for the Postgres system and why do you think they chose those goals?  Do they make sense?
+* Pick one of the (many) ideas in the paper that most interests you.  Why is it interesting?   Does the proposed design hold water?  Feel free to read related work.
+
+
+
+
+
+<a name='oltp' />
+### OLTP Stores    
+
+
+* [OLTP Through the Looking Glass, and What We Found There](./files/papers/oltpperf-sigmod08.pdf)
+* [Hekaton: SQL Server’s Memory-Optimized OLTP Engine](./files/papers/hekaton-sigmod13.pdf)
+* [The End of an Architectural Era](http://nms.csail.mit.edu/~stavros/pubs/hstore.pdf)
+
+
+<a name='colstore' />
+### Column Stores    
+
+Readings
+
+* [C-Store: A Column-oriented DBMS ](./files/papers/cstore-vldb05.pdf)
+* [MonetDB/X100: Hyper-Pipelining Query Execution](./files/papers/monetdb-cidr05.pdf)
+* [Integrating Compression and Execution in Column-Oriented Database Systems](./files/papers/abadi-sigmod2006.pdf)
+* [An Experimental Study of Bitmap Compression vs. Inverted List Compression](./files/papers/sidm338-wangA.pdf)
+* [Column-Stores vs. Row-Stores: How Different Are They Really?](http://www.cs.umd.edu/~abadi/papers/abadi-sigmod08.pdf)
+* [Survey: The Design and Implementation of Modern Column-Oriented Database Systems](https://stratos.seas.harvard.edu/files/stratos/files/columnstoresfntdbs.pdf)
+* [Blog Post: 40x faster hash joiner with vectorized execution](https://www.cockroachlabs.com/blog/vectorized-hash-joiner/)
+
+
+
+<a name="clouddb" />
+### Cloud-scale Analytics
+
+* [Dremel Test-of-Time Keynote](https://www.youtube.com/watch?v=9GutzPX6ufo)
+* [The Snowflake Elastic Data Warehouse](./files/papers/snowflake.pdf)
+* [Dremel: A Decade of Interactive SQL Analysis at Web Scale](http://www.vldb.org/pvldb/vol13/p3461-melnik.pdf)
+* [Original Dremel paper](https://dl.acm.org/doi/pdf/10.14778/1920841.1920886)
+* [Dewitt's Cloud DB talk slides](./files/papers/dewittclouddbtalk.pptx)
+* [Choosing a Cloud DBMS](./files/papers/choosingclouddb.pdf)
+
+
+
+<a name="rep"/>
+### DB and Query Representations
+
+* [QueryFormer: A Tree Transformer Model for Query Plan Representation](https://www.vldb.org/pvldb/vol15/p1658-zhao.pdf)
+* [TURL: Table Understanding through Representation Learning](https://research.google/pubs/pub52020/)
+* [Sato: Contextual Semantic Type Detection in Tables](https://arxiv.org/abs/1911.06311)
+
+
+<a name="replication" />
+### Distributed Consistency under Replication
+
+* [The original Raft paper](https://raft.github.io/raft.pdf)
+* [Viewstamped Replication Revisited](http://pmg.csail.mit.edu/papers/vr-revisited.pdf)
+* [Living Without Atomic Clocks blog post](https://www.cockroachlabs.com/blog/living-without-atomic-clocks/)
+* [Raft Refloated](http://www.cl.cam.ac.uk/~ms705/pub/papers/2015-osr-raft.pdf) 
+* [Google's Paxos Made LIve](https://research.google.com/archive/paxos_made_live.html)
+* [Anna: A Crazy Fast, Super-Scalable, Flexibly Consistent KVS](https://rise.cs.berkeley.edu/blog/anna-kvs/)
+
 
 <a name='matviews' />
 ### Materialized Views    
 
 
-* Required: [Survey: Materialized Views](./files/papers/matview-survey.pdf) Ch 1,2,4
-* Optional: [Noria: dynamic, partially-stateful data-flow for high-performance web applications](https://pdos.csail.mit.edu/papers/noria:osdi18.pdf)
-* Optional: [CrocodileDB: Efficient Database Execution through Intelligent Deferment](http://cidrdb.org/cidr2020/papers/p14-shang-cidr20.pdf)
 
-<a name="stream" />
-### Streaming
+* [Survey: Materialized Views](./files/papers/matview-survey.pdf) Ch 1,2,4
+* [Noria: dynamic, partially-stateful data-flow for high-performance web applications](https://pdos.csail.mit.edu/papers/noria:osdi18.pdf)
 
-* Required: [Aurora](http://cs.brown.edu/research/aurora/vldb03_journal.pdf)
-* Required: [Flink](http://www.vldb.org/pvldb/vol10/p1718-carbone.pdf)
+Further Reading
 
-<a name="apps"/>
-### Applications as Views
+* Materialized Views
+  * [CrocodileDB: Efficient Database Execution through Intelligent Deferment](http://cidrdb.org/cidr2020/papers/p14-shang-cidr20.pdf)
+* Applications as Materialized Views
+  * [Convex](https://www.youtube.com/watch?v=iizcidmSwJ4CMU)
+  * [Do-It-Yourself Database-Driven Web Applications](https://www.skylineuniversity.ac.ae/pdf/database/Database%20driven%20web%20sites.pdf)
+  * [DVMS](#)
+  * [QUILT](https://dl.acm.org/doi/pdf/10.1145/2642918.2647387)
+  * [Building data-centric apps with a reactive relational database](https://riffle.systems/essays/prelude/)
 
-* [Convex](https://www.youtube.com/watch?v=iizcidmSwJ4CMU)
-* [Do-It-Yourself Database-Driven Web Applications](https://www.skylineuniversity.ac.ae/pdf/database/Database%20driven%20web%20sites.pdf)
-* [DVMS](#)
-* [QUILT](https://dl.acm.org/doi/pdf/10.1145/2642918.2647387)
-* [Building data-centric apps with a reactive relational database](https://riffle.systems/essays/prelude/)
 
 <a name="incmatviews" />
 ### Incrementally Maintaining Materialized Views
 
-* Required: [DBToaster](https://dbtoaster.github.io/papers/pvldb2012-dbtoaster.pdf)
-  * Optional: [DBToaster talk](https://dbtoaster.github.io/papers/ecocloud2013-dbtoaster-mn.pdf)
-  * Optional: [The theory](https://dbtoaster.github.io/papers/pods2010-ring.pdf)
-* Optional: [Intermittent Query Processing](http://www.vldb.org/pvldb/vol12/p1427-tang.pdf)
+* [DBToaster](https://dbtoaster.github.io/papers/pvldb2012-dbtoaster.pdf) ([Talk](https://dbtoaster.github.io/papers/ecocloud2013-dbtoaster-mn.pdf), [theory](https://dbtoaster.github.io/papers/pods2010-ring.pdf))
+* [Intermittent Query Processing](http://www.vldb.org/pvldb/vol12/p1427-tang.pdf)
+
+
+<a name="stream" />
+### Streaming
+
+* [Aurora](http://cs.brown.edu/research/aurora/vldb03_journal.pdf)
+* [Flink](http://www.vldb.org/pvldb/vol10/p1718-carbone.pdf)
 
 
 <a name='datalog' />
@@ -331,11 +485,10 @@ Questions
 <a name='lineage' />
 ### Lineage   
 
-Readings:
 
-* Required: [Provenance Semirings](http://db.cis.upenn.edu/DL/07/pods07.pdf)
-* Optional: [SMOKE: Fine-grained Lineage at Interactive Speed](http://www.vldb.org/pvldb/vol11/p719-psallidas.pdf)
-* Optional: [Application of provenance to vis](https://www.dropbox.com/s/fkp5hk1gp4lrg9h/smoke-hilda18.pdf?dl=0)
+* [Provenance Semirings](http://db.cis.upenn.edu/DL/07/pods07.pdf)
+* [SMOKE: Fine-grained Lineage at Interactive Speed](http://www.vldb.org/pvldb/vol11/p719-psallidas.pdf)
+* [Application of provenance to vis](https://www.dropbox.com/s/fkp5hk1gp4lrg9h/smoke-hilda18.pdf?dl=0)
 
 Question to comment on:
 
@@ -346,31 +499,11 @@ Question to comment on:
 
 Read one of the two required papers:
 
-* Required: [SMOKE: Fine-grained Lineage at Interactive Speed](http://www.vldb.org/pvldb/vol11/p719-psallidas.pdf)
-* Required: [Perm: Processing provenance and data on the same data model through query rewriting](https://www.zora.uzh.ch/id/eprint/24446/2/main.pdf)
-* Optional: [GPROM: Middleware implementation for PERM](https://par.nsf.gov/servlets/purl/10082097)
-* Optional: [Provenance for Interactive Visualizations](https://www.dropbox.com/s/32aid7isd2arx47/smoke-hilda18-cr.pdf?dl=0)
-* Optional: [Titian: Data Provenance Support in Spark](http://www.vldb.org/pvldb/vol9/p216-interlandi.pdf)
-
-<a name="datamarkets"/>
-### Data Markets
-
-* Data Station
-* Data Augmentation
-* Kitana
-* [Selective Data Acquisition in the Wild for Model Charging](https://www.vldb.org/pvldb/vol15/p1466-li.pdf)
-* Snowflake, Amazon, etc
-
-<a name="cc"/>
-### Optimistic and Multiversion Concurrency Control
-
-* Required: [Concurrency Control in Distributed Database Systems](./files/papers/bernstein-csur1981.pdf)
-* Required: [Seeing is Believing](https://drive.google.com/file/d/1we7ok4C8ra2-6fP1yT7EJ-Rv9LSGCiUt/view)
-* Optional: [On Optimistic Methods for Concurrency Control](http://sites.fas.harvard.edu/~cs265/papers/kung-1981.pdf)
-* Optional: [Silo](http://people.csail.mit.edu/stephentu/papers/silo.pdf)
-* Optional: [An Empirical Evaluation of In-Memory Multi-Version Concurrency Control](http://www.vldb.org/pvldb/vol10/p781-Wu.pdf)
-  * Concurrency control is hard, skim this paper to get a sense of the complexities.
-* Optional: [Optimistic Lock Coupling](https://web.archive.org/web/20220306194839id_/http://sites.computer.org/debull/A19mar/p73.pdf)
+* [SMOKE: Fine-grained Lineage at Interactive Speed](http://www.vldb.org/pvldb/vol11/p719-psallidas.pdf)
+* [Perm: Processing provenance and data on the same data model through query rewriting](https://www.zora.uzh.ch/id/eprint/24446/2/main.pdf)
+* [GPROM: Middleware implementation for PERM](https://par.nsf.gov/servlets/purl/10082097)
+* [Provenance for Interactive Visualizations](https://www.dropbox.com/s/32aid7isd2arx47/smoke-hilda18-cr.pdf?dl=0)
+* [Titian: Data Provenance Support in Spark](http://www.vldb.org/pvldb/vol9/p216-interlandi.pdf)
 
 
 
@@ -386,96 +519,8 @@ Readings:
 
 
 
-<a name="sysr"/>
-### System R Overview 
-
-Readings 
-
-* Required: <a href="./files/papers/systemr-retrospective.pdf">System R Retrospective</a>
-* Optional: <a href="./files/papers/ingres-retrospective.pdf">Ingres Design</a>
 
 
-Paper Review 
-
-* System R was an impressive research and engineering effort, and the reading is a retrospective of the 6 year project.  
-* The paper discusses "the Convoy Problem".  Discuss the problem:  What is it?  Why does it exist?
-* The paper discusses many many topics.  Identify and pick one aspect (different than the convoy problem) that you are particularly impressed with.  Discuss what and why.
-
-
-<a name='postgres' />
-### INGRES/POSTGRES    
-
-Readings
-
-* Required: [Design of Postgres (Initial design)](./files/papers/postgres-retrospective.pdf)
-* Optional: [The Postgres Next-Generation DBMS (Midterm design)](./files/papers/postgres-nextgen-cacm.pdf)
-* Optional: [Design of INGRES](./files/papers/ingres-retrospective.pdf)
-  * Worth skimming: QUEL, leveraging UNIX, concurrency control arguments
-* Optional: [The Landsharks are on the Squawk Box - Stonebraker Turing Award Lecture](https://cacm.acm.org/magazines/2016/2/197423-the-land-sharks-are-on-the-squawk-box/fulltext)
-
-
-Paper Review 
-
-* What were the main goals for the Postgres system and why do you think they chose those goals?  Do they make sense?
-* Pick one of the (many) ideas in the paper that most interests you.  Why is it interesting?   Does the proposed design hold water?  Feel free to read related work.
-
-
-<a name="optional" />
-## Unscheduled Topics
-
-
-<a name='colstore' />
-### Column Stores    
-
-Readings
-
-* Required: [C-Store: A Column-oriented DBMS ](./files/papers/cstore-vldb05.pdf)
-* Optional: [MonetDB/X100: Hyper-Pipelining Query Execution](./files/papers/monetdb-cidr05.pdf)
-* Optional: [Integrating Compression and Execution in Column-Oriented Database Systems](./files/papers/abadi-sigmod2006.pdf)
-* Optional: [An Experimental Study of Bitmap Compression vs. Inverted List Compression](./files/papers/sidm338-wangA.pdf)
-* Optional: [Column-Stores vs. Row-Stores: How Different Are They Really?](http://www.cs.umd.edu/~abadi/papers/abadi-sigmod08.pdf)
-* Optional: [Survey: The Design and Implementation of Modern Column-Oriented Database Systems](https://stratos.seas.harvard.edu/files/stratos/files/columnstoresfntdbs.pdf)
-* Optional: [Blog Post: 40x faster hash joiner with vectorized execution](https://www.cockroachlabs.com/blog/vectorized-hash-joiner/)
-
-
-
-<a name='oltp' />
-### OLTP Stores    
-
-Readings
-
-* Required: [OLTP Through the Looking Glass, and What We Found There](./files/papers/oltpperf-sigmod08.pdf)
-* Optional: [Hekaton: SQL Server’s Memory-Optimized OLTP Engine](./files/papers/hekaton-sigmod13.pdf)
-* Optional: [The End of an Architectural Era](http://nms.csail.mit.edu/~stavros/pubs/hstore.pdf)
-
-
-<a name="clouddb" />
-### Cloud-scale Analytics
-
-* Required: [Dremel Test-of-Time Keynote](https://www.youtube.com/watch?v=9GutzPX6ufo)
-* Optional: [The Snowflake Elastic Data Warehouse](./files/papers/snowflake.pdf)
-* Optional: [Dremel: A Decade of Interactive SQL Analysis at Web Scale](http://www.vldb.org/pvldb/vol13/p3461-melnik.pdf)
-* Optional: [Original Dremel paper](https://dl.acm.org/doi/pdf/10.14778/1920841.1920886)
-* Optional: [Dewitt's Cloud DB talk slides](./files/papers/dewittclouddbtalk.pptx)
-* Optional: [Choosing a Cloud DBMS](./files/papers/choosingclouddb.pdf)
-
-
-
-<a name="rep"/>
-### DB and Query Representations
-
-* [QueryFormer: A Tree Transformer Model for Query Plan Representation](https://www.vldb.org/pvldb/vol15/p1658-zhao.pdf)
-
-
-<a name="replication" />
-### Distributed Consistency under Replication
-
-* [The original Raft paper](https://raft.github.io/raft.pdf)
-* (Optional) [Viewstamped Replication Revisited](http://pmg.csail.mit.edu/papers/vr-revisited.pdf)
-* (Optional) [Living Without Atomic Clocks blog post](https://www.cockroachlabs.com/blog/living-without-atomic-clocks/)
-* (Optional) [Raft Refloated](http://www.cl.cam.ac.uk/~ms705/pub/papers/2015-osr-raft.pdf) 
-* (Optional) [Google's Paxos Made LIve](https://research.google.com/archive/paxos_made_live.html)
-* (Optional) [Anna: A Crazy Fast, Super-Scalable, Flexibly Consistent KVS](https://rise.cs.berkeley.edu/blog/anna-kvs/)
 
 
 <!--
@@ -512,68 +557,77 @@ Readings
 <a name='aqp' />
 ### Approximate Query Processing
 
-* Required: [BlinkDB](https://sameeragarwal.github.io/blinkdb_eurosys13.pdf)
-* Optional: [Pfunk-H](https://columbiaviz.github.io/files/papers/pfunk.pdf)
-* Optional: [Sample+Seek](https://columbiaviz.github.io/files/papers/sigmod16sampleseek.pdf)
-* Optional: [WanderJoin](https://columbiaviz.github.io/files/papers/wanderjoin.pdf)
-* Optional: [Rapid Approximate Aggregation with Distribution-Sensitive Interval Guarantees](https://arxiv.org/pdf/2008.03891.pdf)
+* [BlinkDB](https://sameeragarwal.github.io/blinkdb_eurosys13.pdf)
+* [Pfunk-H](https://columbiaviz.github.io/files/papers/pfunk.pdf)
+* [Sample+Seek](https://columbiaviz.github.io/files/papers/sigmod16sampleseek.pdf)
+* [WanderJoin](https://columbiaviz.github.io/files/papers/wanderjoin.pdf)
+* [Rapid Approximate Aggregation with Distribution-Sensitive Interval Guarantees](https://arxiv.org/pdf/2008.03891.pdf)
 
 <a name='stream' />
 ### Windows and Streaming
 
-* Required: [The Dataflow Model](http://www.vldb.org/pvldb/vol8/p1792-Akidau.pdf)
-* Optional: [Continuous Query Language](http://ilpubs.stanford.edu:8090/758/1/2003-67.pdf) 
+* [The Dataflow Model](http://www.vldb.org/pvldb/vol8/p1792-Akidau.pdf)
+* [Continuous Query Language](http://ilpubs.stanford.edu:8090/758/1/2003-67.pdf) 
 
 
 <a name='scans' />
 ### Fast Scans
 
-* Required: [Column Sketches](https://stratos.seas.harvard.edu/files/stratos/files/sketches.pdf)
-* Required: [BitWeaving](http://www.cs.wisc.edu/~jignesh/publ/BitWeaving.pdf)
-* Optional: [WideTables](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.650.2556&rep=rep1&type=pdf)
-* Optional: [Vectorizing Database Column Scans with Complex Predicates](http://www.adms-conf.org/2013/muller_adms13.pdf)
+* [Column Sketches](https://stratos.seas.harvard.edu/files/stratos/files/sketches.pdf)
+* [BitWeaving](http://www.cs.wisc.edu/~jignesh/publ/BitWeaving.pdf)
+* [WideTables](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.650.2556&rep=rep1&type=pdf)
+* [Vectorizing Database Column Scans with Complex Predicates](http://www.adms-conf.org/2013/muller_adms13.pdf)
 
 
+<!--
 <a name='lineage3' />
 ### Using Lineage
 
 * Optional: [Querying and Creating Visualizations by Analogy](http://www.cs.utah.edu/~juliana/pub/tvcg-analogy2007.pdf)
 * Optional: [VisTrails: Enabling Interactive Multiple-View Visualizations](https://vgc.poly.edu/~juliana/pub/vistrails-vis2005.pdf)
+-->
 
 <a name='datacubes' />
 ### Data Cubes    
 
-* Required: [Data Cube](./files/papers/datacube-jimgray.pdf)
-* Optional: [Implementing Data Cubes Efficiently](http://ilpubs.stanford.edu:8090/102/1/1995-34.pdf)
-* Optional: [Explaining differences in multidimensional aggregates](./files/papers/olapdiff-sunita.pdf)
-* Optional: [Gaussian Cubes: Real-Time Modeling for Visual Exploration of Large Multidimensional Datasets](https://cscheid.net/static/papers/infovis_gaussian_cubes_2016.pdf)
+* [Data Cube](./files/papers/datacube-jimgray.pdf)
+* [Implementing Data Cubes Efficiently](http://ilpubs.stanford.edu:8090/102/1/1995-34.pdf)
+* [Gaussian Cubes: Real-Time Modeling for Visual Exploration of Large Multidimensional Datasets](https://cscheid.net/static/papers/infovis_gaussian_cubes_2016.pdf)
 
 <a name="obliv"/>
 ### Oblivious Databases
 
-* Required: [ObliDB](http://www.vldb.org/pvldb/vol13/p169-eskandarian.pdf)
-* Optional: [Efficient Oblivious Database Joins](http://www.vldb.org/pvldb/vol13/p2132-krastnikov.pdf)
-* Optional: [SMCQL: Secure Querying for Federated Databases](http://users.eecs.northwestern.edu/~jennie/pubs/smcql.pdf)
+* [ObliDB](http://www.vldb.org/pvldb/vol13/p169-eskandarian.pdf)
+* [Efficient Oblivious Database Joins](http://www.vldb.org/pvldb/vol13/p2132-krastnikov.pdf)
+* [SMCQL: Secure Querying for Federated Databases](http://users.eecs.northwestern.edu/~jennie/pubs/smcql.pdf)
 
 <a name='eddies' />
 ### Adaptive Query Processing
 
 Readings
 
-* Required: [Micro Adaptivity in Vectorwise](https://dl.acm.org/doi/pdf/10.1145/2463676.2465292)
-* Optional: [Eddies: Continuously Adaptive Query Processing](./files/papers/eddies-sigmod00.pdf)
-* Optional: [Adaptive Execution of Compiled Queries](https://db.in.tum.de/~leis/papers/adaptiveexecution.pdf)
-* Old list
-  * Optional: [Survey: Adaptive Query Processing](https://www.nowpublishers.com/article/Details/DBS-001)
-  * Optional: [TelegraphCQ: Continuous Dataflow Processing for an Uncertain World](http://db.csail.mit.edu/madden/html/TCQcidr03.pdf)
-  * Optional: [Worst Case Optimal Joins](https://columbiadb.github.io/files/papers/optimaljoin.pdf)
+* [Micro Adaptivity in Vectorwise](https://dl.acm.org/doi/pdf/10.1145/2463676.2465292)
+* [Eddies: Continuously Adaptive Query Processing](./files/papers/eddies-sigmod00.pdf)
+* [Adaptive Execution of Compiled Queries](https://db.in.tum.de/~leis/papers/adaptiveexecution.pdf)
+
+Further Reading
+
+* [Survey: Adaptive Query Processing](https://www.nowpublishers.com/article/Details/DBS-001)
+* [TelegraphCQ: Continuous Dataflow Processing for an Uncertain World](http://db.csail.mit.edu/madden/html/TCQcidr03.pdf)
+* [Worst Case Optimal Joins](https://columbiadb.github.io/files/papers/optimaljoin.pdf)
 
 <a name="explanation" />
 ### Explanation
 
+Readings
+
 * Required: [Scorpion: Explaining away outliers in aggregate queries](http://sirrice.github.io/files/papers/scorpion-vldb13.pdf)
-* Optional: [DIFF: A Relational Interface for Large-Scale Data Explanation](http://www.vldb.org/pvldb/vol12/p419-abuzaid.pdf)
-* Optional: [Rain: Complaint-driven Training Data Debugging for Query 2.0](https://arxiv.org/pdf/2004.05722.pdf)
+* Required: [DIFF: A Relational Interface for Large-Scale Data Explanation](http://www.vldb.org/pvldb/vol12/p419-abuzaid.pdf)
+
+Further Reading
+
+* [Explaining differences in multidimensional aggregates](./files/papers/olapdiff-sunita.pdf)
+* [Rain: Complaint-driven Training Data Debugging for Query 2.0](https://arxiv.org/pdf/2004.05722.pdf)
 * Related codebases
   * https://github.com/PiotrZakrzewski/macrobase-diff
   * https://datools.readthedocs.io/en/latest/

@@ -4,11 +4,11 @@ white,Thu 01-26,Indexes,indexes,,Classic and Learned Indexes
 #ffe4fc,Thu 02-02,Joins,join,,"Worst case optimal, SkinnerDB"
 white,Thu 02-09,Query Optimization,qopt,,"Top down, Bottom up, Bao"
 #ffe4fc,Thu 02-16,Cost Estimation,costest,,"Neo/Leo, Join size estimation, How good are cost estimators?"
-white,Thu 02-23,Concurrency Control,,,TBA
+white,Thu 02-23,Concurrency Control,cc,,TBA
 #ffe4fc,Thu 03-02,Main Memory Query Execution,compilation,Plan+Team,"Hyper, Morsel-driven Execution"
 white,Thu 03-09,Dataflow Engines,dataflow1,,Differential Dataflow
 #ffe4fc,Thu 03-16,spring recess!,,,
-white,Thu 03-23,In-DBMS ML,mlindb,,
+white,Thu 03-23,In-DBMS ML,mlindb,,"Madlib, Bismark"
 #ffe4fc,Thu 03-30,Learning over Joins,mlindb2,Status Update,
 white,Thu 04-06,App-DBMS interop + UDFs,udfs,,
 #ffe4fc,Thu 04-13,Data Quality,apps,,"Holo Clean, complaint-driven data debugging, foundation models for data prep"
