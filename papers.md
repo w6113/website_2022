@@ -90,11 +90,11 @@ Further reading
   * [An Experimental Evaluation and Investigation of Waves of Misery in R-trees](https://www.vldb.org/pvldb/vol15/p478-aref.pdf)
   * [Survey: Modern B-Tree Techniques](./files/papers/btreesurvey-graefe.pdf)
   * [The Log-structured merge-tree (LSM-tree)](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C10&q=The+log-structured+merge-tree+%28LSM-tree%29&btnG=)
-  * [Database Cracking](https://people.eecs.berkeley.edu/~kubitron/cs262a/handouts/papers/cidr07p07.pdf)
 * Generating New Index Designs using ML
   * [The Next 50 Years in Database Indexing](https://dl.acm.org/doi/abs/10.14778/3494124.3494136)
   * [The Data Calculator](https://faculty.cc.gatech.edu/~jarulraj/courses/8803-f18/papers/data_calculator.pdf) ([youtube talk](https://www.youtube.com/watch?v=uFtkA3CEWY0))
-* Learned Indexes
+* Adaptive and Learned Indexes
+  * [Database Cracking](https://people.eecs.berkeley.edu/~kubitron/cs262a/handouts/papers/cidr07p07.pdf)
   * [Revenge of Interpolation Search](https://pages.cs.wisc.edu/~jignesh/publ/Revenge_of_the_Interpolation_Search.pdf)
   * [Qd-tree](https://dl.acm.org/doi/10.1145/3318464.3389770)
   * [Tsunami: Learned Multi-dim Indexes](https://arxiv.org/pdf/2006.13282.pdf?TB_iframe=true&width=370.8&height=658.8)
