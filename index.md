@@ -109,9 +109,9 @@ See [FAQ](./syllabus#faq) for difference between 6113 and the other database cou
 </table>
 
 
-Inspired by
+Course design inspired by
 
-* https://cs286berkeley.net/
-* https://cs.uwaterloo.ca/~kmsalem/courses/cs848S19/schedule.shtml
-* https://colinraffel.com/blog/role-playing-seminar.html
+* [Cal's CS286](https://cs286berkeley.net/)
+* [Waterloo's CS848](https://cs.uwaterloo.ca/~kmsalem/courses/cs848S19/schedule.shtml)
+* Colin Raffel's [Role playing seminar](https://colinraffel.com/blog/role-playing-seminar.html)
 * Carl Vondrick's self supervision graduate seminar
