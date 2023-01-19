@@ -7,12 +7,6 @@ layout: index
 
 Data management systems are the corner-stone of modern applications, businesses, and science (including data).  If you were excited by the topics in 4111,  this graduate level course in database systems research will be a deep dive into classic and modern database systems research.  Topics will range from classic database system design, modern optimizations in single-machine and multi-machine settings, data cleaning and quality, and application-oriented databases.   This semester's theme will look at how learning has affected many classic data management systems challenges, and also how data management systems support and extends ML needs.
 
-<!--The class places a heavy emphasis on paper reading, discussion, and presentation. The point is to practice reading papers critically, writing proper reviews, implementing ideas in research papers, and conducting research. As such, students will be expected to read papers in depth, complete assignments based ideas from the readings, and conduct a semester-long research project.-->
-
-<!--
-Ideally, you will be comfortable with reading code that is not yours, open to trying different software systems, and willing to actively participate in and lead discussions.
--->
-
 See [FAQ](./syllabus#faq) for difference between 6113 and the other database courses. 
 
 <!--<small style="color: grey">Course capped at 25. </small>-->
@@ -21,7 +15,7 @@ See [FAQ](./syllabus#faq) for difference between 6113 and the other database cou
 #### Information 
 
 * Class: Th 2-4PM
-* Instructor: [Eugene Wu](http://www.eugenewu.net), <small>Thurs 12-1PM 421 Mudd</small>
+* Instructor: [Eugene Wu](http://www.eugenewu.net), OH: Thurs 12-1PM 421 Mudd
 * [Syllabus & FAQ](./syllabus), 
 [Slack](https://w6113-s23.slack.com),
 [Project](./projects),
