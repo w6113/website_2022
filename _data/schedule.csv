@@ -1,5 +1,5 @@
 color,date,slug,link,notes,misc
-#ffe4fc,Thu 01-19,Intro + Classic Systems Overview,,,Preview of systems and topics of the semester + relevance of classic systems
+#ffe4fc,Thu 01-19,"<a href=""https://docs.google.com/presentation/d/1_cHN9TdNFsAv8w0mEak6sWlOosEof8lY2x1vPDQ_PVk/edit#slide=id.g1c50e41008a_0_30"">Intro</a> + Classic Systems Overview",,,Preview of systems and topics of the semester + relevance of classic systems
 white,Thu 01-26,Indexes,indexes,,Classic and Learned Indexes
 #ffe4fc,Thu 02-02,Joins,join,,"Worst case optimal, SkinnerDB"
 white,Thu 02-09,Query Optimization,qopt,,"Top down, Bottom up, Bao"
