@@ -170,6 +170,8 @@ The following are open source DBMSes that you can use to implement your projects
 <a name="suggestions"></a>
 ## Project Suggestions
 
+
+
 In-DBMS ML: extend a DBMS to run statistical libraries/ML models/data analysis operations.   Evaluate against using a library external to the DBMS.   See projects like MadLib, PeekingDuck, MindsDB, Google BigQuery ML.
 
 Predict Query Results: given database statistics and a query, can a model predict the query results?  For what databases and classes of queries is this possible?
@@ -189,6 +191,9 @@ Progressive encoding transforms a data item into a sequence of bytes where any p
 JPEG is an example of progressively encoded data, a few bytes shows a low quality image, and adding a few more bytes improve the quality.
 Similarly, a breadth-first ordering of a secondary index is a progressive encoding -- larger prefixes correspond to a deeper tree that is more effective at filtering. Is it possible to compute and return a progressively encoded data cube, where larger prefixes correspond to finer granularities for the useful dimensions?  In other words, can you devise an algorithm that returns a progressively encoded data cube in less time than computing the cube and then encoding it?
  
+
+
+Scalable graph layout algorithm:
 
 
 ### Build on Existing Projects
