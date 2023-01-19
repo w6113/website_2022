@@ -14,7 +14,7 @@ See [FAQ](./syllabus#faq) for difference between 6113 and the other database cou
 
 #### Information 
 
-* Class: Th 2-4PM
+* Class: Th 2-4PM in 829 Mudd
 * Instructor: [Eugene Wu](http://www.eugenewu.net), OH: Thurs 12-1PM 421 Mudd
 * [Syllabus & FAQ](./syllabus), 
 [Slack](https://w6113-s23.slack.com),
