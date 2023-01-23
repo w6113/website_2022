@@ -179,6 +179,7 @@ Required
 
 Further Reading
 
+* [Fast Serializable MVCC](https://db.in.tum.de/~muehlbau/papers/mvcc.pdf)
 * [Concurrency Control in Distributed Database Systems](./files/papers/bernstein-csur1981.pdf)
 * [Seeing is Believing](https://drive.google.com/file/d/1we7ok4C8ra2-6fP1yT7EJ-Rv9LSGCiUt/view)
 * [On Optimistic Methods for Concurrency Control](http://sites.fas.harvard.edu/~cs265/papers/kung-1981.pdf)
