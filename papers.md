@@ -142,7 +142,7 @@ Further reading
 * Optimizers in Industry
   * [PostgreSQL Optimizer Documentation](https://www.postgresql.org/docs/current/geqo.html)
   * [Cockroach blogpost: How we built a cost-based SQL optimizer](https://www.cockroachlabs.com/blog/building-cost-based-sql-optimizer/)
-  * [Book: Inside the SQLServer Query Optimizer](./files/papers/inside-the-sql-server-query-optimizer.pdf)
+  * Book: Inside the SQLServer Query Optimizer (search online or in columbia libraries for this)
 * Learned Optimizers
   * [Learning to Optimize Join Queries With Deep Reinforcement Learning](https://arxiv.org/pdf/1808.03196.pdf)
   * [Selectivity Estimation using Probabilistic Models](https://ai.stanford.edu/~koller/Papers/Getoor+al:SIGMOD01.pdf)
