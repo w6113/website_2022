@@ -326,17 +326,16 @@ Further Reading:
 
 Required
 
-* Required Background: [Revising Online Data Markets in 2022](http://raulcastrofernandez.com/papers/7_31CRstatusofDataMarkets_final.pdf)
-* Main Topic: TBA
+* Required Background: [Revisiting Online Data Markets in 2022](http://raulcastrofernandez.com/papers/7_31CRstatusofDataMarkets_final.pdf)
+* Main Topic: [Data Market Platforms: Trading Data Assets to Solve Data Problems](http://raulcastrofernandez.com/papers/1323-castrofernandez.pdf)
 
 Further Reading
 
+* [“Everyone wants to do the model work, not the data work”: Data Cascades in High-Stakes AI](https://dl.acm.org/doi/abs/10.1145/3411764.3445518?casa_token=ARddOBy4qXYAAAAA:OIZlRPms615AKPMu3INUAGcIafNfMuZRpjzA2lDhra8nuI4IcKVKKO8_u0sHBvGdI83DM1RuZR_EwDc)
 * [Data Station](https://dl.acm.org/doi/abs/10.14778/3551793.3551861)
 * [Aurum](https://dspace.mit.edu/bitstream/handle/1721.1/137860/icde18-aurum.pdf?sequence=2&isAllowed=y)
 * [Kitana](#)
 * [Selective Data Acquisition in the Wild for Model Charging](https://www.vldb.org/pvldb/vol15/p1466-li.pdf)
-* Data Markets in the Wild
-  * Snowflake, Amazon, etc
 
 
 

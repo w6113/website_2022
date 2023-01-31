@@ -183,7 +183,7 @@ https://table-representation-learning.github.io/accepted-papers.html
 
 Can ML Do Data Analysis?  Data cleaning, preparation, and augmentation is one of the major challenges in data analysis and machine learning.   Dive into one task (e.g., data transform, value imputation, error detection, etc) and evaluate the efficacy of large language models across a variety of dataset domains.    See [Can Foundation Models Wrangle Your Data?](https://arxiv.org/pdf/2205.09911.pdf) for inspiration.
 
-<!--NL for databases.  Given a handle to a database (e.g., a SQLite or DuckDB file), generate a text search interface that supports a mixture of natural language, structured queries, and keyword search.   For instance, if an artist compiles a database of 18th century artwork and wants to share it on the web, a user -->
+<!--NL for database-backed applications.  Given a handle to a database (e.g., a SQLite or DuckDB file), generate a text search interface that supports a mixture of natural language, structured queries, and keyword search.   For instance, if an artist compiles a database of 18th century artwork and wants to share it on the web, a user -->
 
 Learned Webviews for databases.   One perspective of most websites is that they are simply materialized views -- Amazon's product page issues a query for a given product, and developers manually determine a good layout to render the query result.   Is it possible, given a database, to automatically generate a web view for a user's query?   What if the user says "make the results look like <a webpage>".
 
@@ -195,8 +195,7 @@ JPEG is an example of progressively encoded data, a few bytes shows a low qualit
 Similarly, a breadth-first ordering of a secondary index is a progressive encoding -- larger prefixes correspond to a deeper tree that is more effective at filtering. Is it possible to compute and return a progressively encoded data cube, where larger prefixes correspond to finer granularities for the useful dimensions?  In other words, can you devise an algorithm that returns a progressively encoded data cube in less time than computing the cube and then encoding it?
  
 
-
-Scalable graph layout algorithm:
+Robust Cardinality Estimation Benchmark.  One of the challenges with benchmarking cardinality estimation techniques is that it's easy to over fit to a dataset/query workload and do well.  It's also hard to understand end-to-end performance implications.   A potential strategy is to use data integration to construct a robust and large benchmark out of many existing benchmarks.   The idea is to take existing benchmarks A and B, and use data integration to translate the queries for benchmark A to run on the data for benchmark B.   Data integration itself is ambiguous, so it may generate K different schema mappings.   Thus given N benchmarks, we could create N^K dataset-query combinations.    Use this idea to evaluate a range of cardinatily estimation techniques.
 
 
 ### Build on Existing Projects
