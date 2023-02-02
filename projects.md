@@ -171,6 +171,8 @@ The following are open source DBMSes that you can use to implement your projects
 ## Project Suggestions
 
 
+### Open Ended Ideas
+
 
 In-DBMS ML: extend a DBMS to run statistical libraries/ML models/data analysis operations.   Evaluate against using a library external to the DBMS.   See projects like MadLib, PeekingDuck, MindsDB, Google BigQuery ML.
 
