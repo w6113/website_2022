@@ -45,7 +45,7 @@ We have setup a template for your proposal on overleaf.  Clone it into your team
 **Submission**
 
 1. Use the [proposal template on Overleaf](https://www.overleaf.com/read/xhpgqyqbghry)
-1. [Click here to submit](https://www.dropbox.com/request/4twBRI2OeuplW2rSV4Ih)
+1. [Click here to submit](https://www.dropbox.com/request/9jSVvxqOoXtpYEsmcF7i)
 
 
 
@@ -224,10 +224,10 @@ SmokedDuck uses a program analysis framework to analyze data intensive programs 
 3. Evaluate the trade-off and synergies between [logical query rewrites](https://ieeexplore.ieee.org/abstract/document/4812401/) for provenance and physical instrumentation in streaming dataflow systems like [differential dataflow](https://timelydataflow.github.io/differential-dataflow/)/[materialized](https://materialized.io).   You can get pretty far by simply performing logical rewrites of the dataflow operators without modifying the implementation of the dataflow system.
 
 
-FaDE is a compiler that uses lineage for a query to generate efficient code for evaluation of deletion interventions ("if we removed users with age < 18, how would the result change?").  The goal is to evaluate millions of interventions per second.  This is useful (among many use cases) for what-if analysis and  [explaining errors in query results](https://dspace.mit.edu/bitstream/handle/1721.1/89076/scorpion-vldb13.pdf?sequence=1&isAllowed=y).   
+FaDE is a compiler that uses lineage for a query to generate efficient code to quickly evaluate deletion interventions ("if we removed users with age < 18, how would the result change?").  The goal is to evaluate millions of interventions per second.  This is useful (among many use cases) for what-if analysis and  [explaining errors in query results](https://dspace.mit.edu/bitstream/handle/1721.1/89076/scorpion-vldb13.pdf?sequence=1&isAllowed=y).   
 
 * FaDE's code generation originally used C++ templates to generate efficient code using software and hardware parallelization, but requires trickly compilation management. Help us generate efficient code in either Python or WASM that can be executed in WASM and Jupyter notebooks efficiently. 
-* FaDE models an intervention as a bitmask over the input relations.  Many applications want to quickly search a predicate space, and if FaDE can evaluate millions of interventions per second, simply generating interventions can be a bottleneck. Help us tackle this problem.
+* FaDE models an intervention as a bitmask over the input relations, and a set of interventions as a matrix.  Many applications want to quickly search a predicate space, and if FaDE can evaluate millions of interventions per second, simply generating interventions can be a bottleneck. Help us tackle this problem.
 
 
 
