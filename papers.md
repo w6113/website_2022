@@ -129,8 +129,8 @@ Further reading
 Readings
 
 * Required Background: [Orca: A Modular Query Optimizer Architecture for Big Data](./files/papers/orca.pdf)
-* Required Background: [What We Found Running the Join Order Benchmark](https://db.in.tum.de/~leis/papers/lookingglass.pdf)
-* Main Topic: [Bao: Learning to Steer Query Optizers](https://arxiv.org/pdf/2004.03814.pdf)
+* Required Background: [What We Found Running the Join Order Benchmark](https://db.in.tum.de/~leis/papers/lookingglass.pdf) (Section 1, 10; skim the rest)
+* Main Topic: [Bao: Learning to Steer Query Optimzers](https://arxiv.org/pdf/2004.03814.pdf)
 
 Further reading 
 
