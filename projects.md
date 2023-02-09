@@ -210,7 +210,7 @@ Jade is an ongoing project which automatically generates an optimized database b
 1. For interactive visualization interfaces(one example: [oil price](https://public.tableau.com/app/profile/epposite/viz/EPPO_Inter_OilPrice/SUMMARYOILPRICING)), the backend SQL query workload can be optimized by precomputing different data structures(e.g., B-tree, Hash Index, R-Tree, cubes, etc.) to shorten the query latency. A key challenge is that a particular interface query may have multiple logically compatible data structures with different memory occupancies and query latencies. This phenomenon is very common in cube/data tiles. This project will study when a specific query workload over a database can match some or all these data structures - generic data cube, Immens, Falcon, Hashedcube, Nanocube, how to decide which data structure to use. If interested, feel free to contact Yiru at yiru.chen@columbia.edu.
   
 2. We are implementing a query execution framework that spans the database, server, and browser, enabling free placement of parts of the query plan, and are adding different data structures to suit different interfaces and queries. For a course project, come up with some interface use cases that might plausibly decide between some of these data structures, implement them in our execution framework, compare with baselines, and profile their performance to determine when they are suitable. If interested, contact Jeff at jat2164@columbia.edu.
-Note: task 2 is implemented in Rust, which can be challenging to learn.
+Note: project 2 is implemented in Rust, which can be challenging to learn.
 
   
 
