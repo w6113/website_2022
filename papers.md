@@ -169,24 +169,6 @@ Further Reading
 * [Learning Optimizer for Shared Clouds](http://www.vldb.org/pvldb/vol12/p210-wu.pdf)
 
 
-<a name="cc"/>
-### Concurrency Control
-
-Required
-
-* Required Background: TBA
-* Main Topic: TBA
-
-Further Reading
-
-* [Fast Serializable MVCC](https://db.in.tum.de/~muehlbau/papers/mvcc.pdf)
-* [Concurrency Control in Distributed Database Systems](./files/papers/bernstein-csur1981.pdf)
-* [Seeing is Believing](https://drive.google.com/file/d/1we7ok4C8ra2-6fP1yT7EJ-Rv9LSGCiUt/view)
-* [On Optimistic Methods for Concurrency Control](http://sites.fas.harvard.edu/~cs265/papers/kung-1981.pdf)
-* [An Empirical Evaluation of In-Memory Multi-Version Concurrency Control](http://www.vldb.org/pvldb/vol10/p781-Wu.pdf) 
-* [Optimistic Lock Coupling](https://web.archive.org/web/20220306194839id_/http://sites.computer.org/debull/A19mar/p73.pdf)
-
-
 
 <a name="vectorization"/>
 ### Main-memory Databases (Vectorization)
@@ -363,6 +345,7 @@ Further Reading
 ## Unscheduled Topics
 
 
+
 <a name="sysr"/>
 ### System R Overview 
 
@@ -395,6 +378,19 @@ Questions to consider
 
 * What were the main goals for the Postgres system and why do you think they chose those goals?  Do they make sense?
 * Pick one of the (many) ideas in the paper that most interests you.  Why is it interesting?   Does the proposed design hold water?  Feel free to read related work.
+
+
+<a name="cc"/>
+### Concurrency Control
+
+Readings
+
+* [Fast Serializable MVCC](https://db.in.tum.de/~muehlbau/papers/mvcc.pdf)
+* [Concurrency Control in Distributed Database Systems](./files/papers/bernstein-csur1981.pdf)
+* [Seeing is Believing](https://drive.google.com/file/d/1we7ok4C8ra2-6fP1yT7EJ-Rv9LSGCiUt/view)
+* [On Optimistic Methods for Concurrency Control](http://sites.fas.harvard.edu/~cs265/papers/kung-1981.pdf)
+* [An Empirical Evaluation of In-Memory Multi-Version Concurrency Control](http://www.vldb.org/pvldb/vol10/p781-Wu.pdf) 
+* [Optimistic Lock Coupling](https://web.archive.org/web/20220306194839id_/http://sites.computer.org/debull/A19mar/p73.pdf)
 
 
 
