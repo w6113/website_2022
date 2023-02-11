@@ -188,28 +188,25 @@ Further Reading
 
 
 
-<a name="memstore"/>
-### Main-memory Query Execution
+<a name="vectorization"/>
+### Main-memory Databases (Vectorization)
 
 Required 
 
-* Required Background: [Efficiently Compiling Efficient Query Plans for Modern Hardware](./files/papers/p539-neumann.pdf)
-* Main Topic: [Morsel-Driven Query Execution](./files/papers/morsel.pdf)
+* Required Background: [MonetDB/X100: Hyper-Pipelining Query Execution](./files/papers/monetdb-cidr05.pdf)
+* Main Topic: [Rethinking SIMD Vectorization for In-Memory Databases](https://dl.acm.org/doi/pdf/10.1145/2723372.2747645)
 
 Further Reading
 
-* Vectorization
-  * [MonetDB/X100: Hyper-Pipelining Query Execution](./files/papers/monetdb-cidr05.pdf)
-  * [Blog Post: 40x faster hash joiner with vectorized execution](https://www.cockroachlabs.com/blog/vectorized-hash-joiner/)
-* Compilation
-  * [How to Architect a Query Compiler, Revisited](./files/papers/tahboub-sigmod18.pdf)
-  * [Generating code for holistic query evaluation](./files/papers/krikellas-icde2010.pdf)
-  * [Spark's Scala expression compiler code](https://github.com/apache/spark/blob/master/sql/catalyst/src/main/scala/org/apache/spark/sql/catalyst/expressions/codegen/CodeGenerator.scala)
-  * [MemSQL's blogpost](http://highscalability.com/blog/2016/9/7/code-generation-the-inner-sanctum-of-database-performance.html)
-* Compilation in other data intensive domains
-  * [Halide](https://dspace.mit.edu/handle/1721.1/85943)
-* In-Memory Systems
+* [Micro Adaptivity in Vectorwise](https://dl.acm.org/doi/pdf/10.1145/2463676.2465292)
+* [Blog Post: 40x faster hash joiner with vectorized execution](https://www.cockroachlabs.com/blog/vectorized-hash-joiner/)
+* Systems and projects
+  * [DuckDB](https://duckdb.org/)
+  * [Datafusion](https://arrow.apache.org/datafusion/)
+  * [Clickhous](https://clickhouse.com/)
   * [Leanstore](./files/papers/leanstore.pdf)
+  * [Apache Arrow](https://arrow.apache.org/)
+
 
 
 Some things to think about when reading
@@ -218,17 +215,40 @@ Some things to think about when reading
 
 
 
+<a name="compilation"/>
+### Main-memory Databases (Compilation)
+
+Required
+
+* Background: [How to Architect a Query Compiler, Revisited](./files/papers/tahboub-sigmod18.pdf)
+* Main Topic: [Efficiently Compiling Efficient Query Plans for Modern Hardware](./files/papers/p539-neumann.pdf)
+
+
+Further reading
+
+* [Adaptive Execution of Compiled Queries](https://db.in.tum.de/~leis/papers/adaptiveexecution.pdf)
+* [Tidy Tuples and Flying Start](https://link.springer.com/content/pdf/10.1007/s00778-020-00643-4.pdf)
+* [Generating code for holistic query evaluation](./files/papers/krikellas-icde2010.pdf)
+* [Spark's Scala expression compiler code](https://github.com/apache/spark/blob/master/sql/catalyst/src/main/scala/org/apache/spark/sql/catalyst/expressions/codegen/CodeGenerator.scala)
+* [MemSQL's blogpost](http://highscalability.com/blog/2016/9/7/code-generation-the-inner-sanctum-of-database-performance.html)
+* Compilation in other data intensive domains
+  * [Halide](https://dspace.mit.edu/handle/1721.1/85943)
+* Compilation vs Vectorization
+  * [Relaxed Operator Fusion](https://dl.acm.org/doi/pdf/10.14778/3151113.3151114)
+  * [Everything You Always Wanted to Know About Compiled and Vectorized Queries But Were Afraid to Ask](https://dl.acm.org/doi/pdf/10.14778/3275366.3284966)
+  * [Vectorization vs. Compilation in Query Execution](https://dl.acm.org/doi/pdf/10.1145/1995441.1995446)
+
+
 <a name='dataflow1' />
 ### Data Flow
 
 Required
 
-* Required Background: TBA
+* Background: [(Survey) State of the Art in Large scale Data Flow](./files/papers/kossmann-sotadistdbs.pdf)
 * Main Topic: [Naiad: A Timely Dataflow System](https://www.microsoft.com/en-us/research/wp-content/uploads/2013/11/naiad_sosp2013.pdf) ([Video introduction](https://www.youtube.com/watch?v=yOnPmVf4YWo), [commercial software](https://materialize.io/))
 
 Further Reading
 
-* [(Survey) State of the Art in Large scale Data Flow](./files/papers/kossmann-sotadistdbs.pdf)
 * Classics
   * [Encapsulation of parallelism in the volcano query processing system](./files/papers/volcanoparallelism-89.pdf)
   * [SEDA: An Architecture for Well-Conditioned, Scalable Internet Services](http://www.sosp.org/2001/papers/welsh.pdf)
