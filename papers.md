@@ -162,6 +162,7 @@ Required
 
 Further Reading
 
+* [Pre-training summarization models of structured datasets for cardinality estimation](https://dl.acm.org/doi/abs/10.14778/3494124.3494127)
 * [DeepDB](https://arxiv.org/pdf/1909.00607.pdf)
 * [Learned Cardinalities](https://www.cidrdb.org/cidr2019/papers/p101-kipf-cidr19.pdf)
 * [Cardinality Estimation in DBMS: A Comprehensive Benchmark Evaluation](https://www.vldb.org/pvldb/vol15/p752-zhu.pdf)
