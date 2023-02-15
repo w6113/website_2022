@@ -162,6 +162,7 @@ Required
 
 Further Reading
 
+* [Two-Level Sampling for Join Size Estimation](https://dl.acm.org/doi/pdf/10.1145/3035918.3035921)
 * [Pre-training summarization models of structured datasets for cardinality estimation](https://dl.acm.org/doi/abs/10.14778/3494124.3494127)
 * [DeepDB](https://arxiv.org/pdf/1909.00607.pdf)
 * [Learned Cardinalities](https://www.cidrdb.org/cidr2019/papers/p101-kipf-cidr19.pdf)
