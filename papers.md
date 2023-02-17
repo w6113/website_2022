@@ -175,17 +175,19 @@ Further Reading
 <a name="vectorization"/>
 ### Main-memory Databases (Vectorization)
 
-Required 
+Required (Edited 2/16: swapped the background and main topic papers)
 
-* Required Background: [MonetDB/X100: Hyper-Pipelining Query Execution](./files/papers/monetdb-cidr05.pdf)
-* Main Topic: [Rethinking SIMD Vectorization for In-Memory Databases](https://dl.acm.org/doi/pdf/10.1145/2723372.2747645)
+* Required Background: [Rethinking SIMD Vectorization for In-Memory Databases](https://dl.acm.org/doi/pdf/10.1145/2723372.2747645)
+* Main Topic: [MonetDB/X100: Hyper-Pipelining Query Execution](./files/papers/monetdb-cidr05.pdf)
 
 Further Reading
 
 * [Micro Adaptivity in Vectorwise](https://dl.acm.org/doi/pdf/10.1145/2463676.2465292)
+* [Make the Most out of Your SIMD Investments](https://dl.acm.org/doi/pdf/10.1145/3211922.3211928)
 * [Blog Post: 40x faster hash joiner with vectorized execution](https://www.cockroachlabs.com/blog/vectorized-hash-joiner/)
-* Systems and projects
+* Vectorized Systems and projects
   * [DuckDB](https://duckdb.org/)
+  * [Meta's Velox](https://github.com/facebookincubator/velox)
   * [Datafusion](https://arrow.apache.org/datafusion/)
   * [Clickhous](https://clickhouse.com/)
   * [Leanstore](./files/papers/leanstore.pdf)
