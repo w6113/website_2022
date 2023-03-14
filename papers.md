@@ -261,6 +261,23 @@ Some notes to guide your reading and thinking.
 
 
 
+<a name="incmatviews" />
+### Incrementally Maintaining Materialized Views
+
+Required:
+
+* Background: [Survey: Materialized Views](./files/papers/matview-survey.pdf) Ch 1,2,4
+* Main Topic: [DBToaster](https://dbtoaster.github.io/papers/pvldb2012-dbtoaster.pdf) ([Talk](https://dbtoaster.github.io/papers/ecocloud2013-dbtoaster-mn.pdf), [theory](https://dbtoaster.github.io/papers/pods2010-ring.pdf))
+
+Further Reading
+
+* [Intermittent Query Processing](http://www.vldb.org/pvldb/vol12/p1427-tang.pdf)
+* [Noria: dynamic, partially-stateful data-flow for high-performance web applications](https://pdos.csail.mit.edu/papers/noria:osdi18.pdf)
+* [CrocodileDB: Efficient Database Execution through Intelligent Deferment](http://cidrdb.org/cidr2020/papers/p14-shang-cidr20.pdf)
+
+
+
+
 <a name="mlindb" />
 ### In-DBMS ML
 
@@ -273,7 +290,7 @@ Required
 Further Reading
 
 * [Technical Debt in ML Systems](https://ckaestne.medium.com/technical-debt-in-machine-learning-systems-62035b82b6de)
-* [Operationalizing Machine Learning: An Interview Study](#)
+* [Operationalizing Machine Learning: An Interview Study](https://arxiv.org/abs/2209.09125)
 * [Incrementally Maintaining Classification using an RDBMS](http://www.vldb.org/pvldb/vol4/p302-koc.pdf)
 
 
@@ -474,12 +491,6 @@ Further Reading
   * [QUILT](https://dl.acm.org/doi/pdf/10.1145/2642918.2647387)
   * [Building data-centric apps with a reactive relational database](https://riffle.systems/essays/prelude/)
 
-
-<a name="incmatviews" />
-### Incrementally Maintaining Materialized Views
-
-* [DBToaster](https://dbtoaster.github.io/papers/pvldb2012-dbtoaster.pdf) ([Talk](https://dbtoaster.github.io/papers/ecocloud2013-dbtoaster-mn.pdf), [theory](https://dbtoaster.github.io/papers/pods2010-ring.pdf))
-* [Intermittent Query Processing](http://www.vldb.org/pvldb/vol12/p1427-tang.pdf)
 
 
 <a name="stream" />
