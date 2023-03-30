@@ -319,6 +319,16 @@ Required
 * Required Background: [Optimization of Queries with User-defined Predicates](http://www.vldb.org/conf/1996/P087.PDF)
 * Main Topic: [User-Defined Operators](https://www.vldb.org/pvldb/vol15/p1119-sichert.pdf)
 
+
+For this week, you **do NOT** need to create slides.  Instead, you will play around with Convex, relate it with concepts from the readings, and prepare questions and observations to share with Sujay before his presentation.  Specifically
+
+* Install and use convex to build an application and deploy it (say, on vercel).   The application should make use of the following convex's features
+  * computation within the UDF (should not just be a get/set/update)
+  * ability for multi-users to concurrently modify data in a way that shows consistency 
+  * (bonus) try out its schema evolution functionality.
+* You may do this in teams as defined by this week's roles
+* Add a link to your app in this week's slides
+
 Further Readings
 
 * [Froid: Optimizing Imperative Programs in RDBMSes](./files/papers/froid.pdf) ([Research Talk](https://www.youtube.com/watch?v=Xyvpcf2RtO4))
