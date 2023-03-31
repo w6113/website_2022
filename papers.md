@@ -320,13 +320,13 @@ Required
 * Main Topic: [User-Defined Operators](https://www.vldb.org/pvldb/vol15/p1119-sichert.pdf)
 
 
-For this week, you **do NOT** need to create slides.  Instead, you will play around with Convex, relate it with concepts from the readings, and prepare questions and observations to share with Sujay before his presentation.  Specifically
+For this week, you **do NOT** need to create slides for your team roles.  Instead, your team will play around with Convex, relate it with concepts from the readings, and prepare questions and observations to share with Sujay before his presentation.  Specifically
 
 * Install and use convex to build an application and deploy it (say, on vercel).   The application should make use of the following convex's features
   * computation within the UDF (should not just be a get/set/update)
   * ability for multi-users to concurrently modify data in a way that shows consistency 
   * (bonus) try out its schema evolution functionality.
-* You may do this in teams as defined by this week's roles
+* Your team will be based on this week's roles.
 * **By Wednesday Noon EST**, Add a slide to [this week's presentation file](https://docs.google.com/presentation/d/1Ra8EzOy3ifNpe4LflfyiZfkrX_GD9vcW5qti8djBoCI/edit?usp=drive_web&ouid=105915010117105077916) containing 
   * your team members, 
   * a link to you app,
