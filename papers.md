@@ -332,7 +332,7 @@ For this week, you **do NOT** need to create slides for your team roles.  Instea
   * a link to you app,
   * a screenshot, 
   * a short description of what the app does.
-  * one question for Sujay related to Convex and the week's paper topics
+  * one question for Sujay related to Convex and the week's (or any previous week's) paper topics
 
 Further Readings
 
