@@ -327,7 +327,12 @@ For this week, you **do NOT** need to create slides.  Instead, you will play aro
   * ability for multi-users to concurrently modify data in a way that shows consistency 
   * (bonus) try out its schema evolution functionality.
 * You may do this in teams as defined by this week's roles
-* Add a link to your app in this week's slides
+* **By Wednesday Noon EST**, Add a slide to [this week's presentation file](https://docs.google.com/presentation/d/1Ra8EzOy3ifNpe4LflfyiZfkrX_GD9vcW5qti8djBoCI/edit?usp=drive_web&ouid=105915010117105077916) containing 
+  * your team members, 
+  * a link to you app,
+  * a screenshot, 
+  * a short description of what the app does.
+  * one question for Sujay related to Convex and the week's paper topics
 
 Further Readings
 
