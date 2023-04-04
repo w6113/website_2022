@@ -327,7 +327,7 @@ For this week, you **do NOT** need to create slides for your team roles.  Instea
   * ability for multi-users to concurrently modify data in a way that shows consistency 
   * (bonus) try out its schema evolution functionality.
 * Your team will be based on this week's roles.
-* **By Wednesday Noon EST**, Add a slide to [this week's presentation file](https://docs.google.com/presentation/d/1Ra8EzOy3ifNpe4LflfyiZfkrX_GD9vcW5qti8djBoCI/edit?usp=drive_web&ouid=105915010117105077916) containing 
+* **By Wednesday Noon EST**, Add a slide to this week's presentation file (see slack)
   * your team members, 
   * a link to you app,
   * a screenshot, 
