@@ -100,8 +100,8 @@ Your presentation should cover (in content, not necessarily one slide for each p
 
 **Submission**
 
-* Add your slides to [this google slides link](#)
-* Deadline for submission: TBA
+* Add your slides to [this google slides link](https://docs.google.com/presentation/d/15KzGHnciKHcsWOxC1xPvw_BGVRAdZl6fDmRbcJJnkT4/edit?usp=sharing)
+* Deadline for submission: Wednesday Apr 26 6PM
 
 
 ### Report/Camera Ready
